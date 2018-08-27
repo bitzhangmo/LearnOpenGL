@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8446044E210C172200E24A3D /* helloWindows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8446044D210C172200E24A3D /* helloWindows.cpp */; };
+		84107B1B2133FF9F006D310E /* textures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84107B1A2133FF9F006D310E /* textures.cpp */; };
 		84460456210C17F500E24A3D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84460455210C17F400E24A3D /* OpenGL.framework */; };
 		84460458210C180100E24A3D /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84460457210C180100E24A3D /* libglfw.3.2.dylib */; };
 		8446045A210C180D00E24A3D /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84460459210C180D00E24A3D /* libGLEW.2.1.0.dylib */; };
@@ -27,8 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84107B162132A1D6006D310E /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		84107B192133FF36006D310E /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		84107B1A2133FF9F006D310E /* textures.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = textures.cpp; sourceTree = "<group>"; };
+		84107B1E21340972006D310E /* 4.1.texture.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.1.texture.vs; sourceTree = "<group>"; };
+		84107B1F213409FF006D310E /* 4.1.texture.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.1.texture.fs; sourceTree = "<group>"; };
 		8446044A210C172200E24A3D /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
-		8446044D210C172200E24A3D /* helloWindows.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = helloWindows.cpp; sourceTree = "<group>"; };
 		84460455210C17F400E24A3D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		84460457210C180100E24A3D /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		84460459210C180D00E24A3D /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
@@ -69,8 +73,12 @@
 		8446044C210C172200E24A3D /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				8446044D210C172200E24A3D /* helloWindows.cpp */,
 				8446045B210C186D00E24A3D /* glad.c */,
+				84107B162132A1D6006D310E /* shader.h */,
+				84107B192133FF36006D310E /* stb_image.h */,
+				84107B1A2133FF9F006D310E /* textures.cpp */,
+				84107B1E21340972006D310E /* 4.1.texture.vs */,
+				84107B1F213409FF006D310E /* 4.1.texture.fs */,
 			);
 			path = LearnOpenGL;
 			sourceTree = "<group>";
@@ -141,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8446044E210C172200E24A3D /* helloWindows.cpp in Sources */,
 				8446045C210C186D00E24A3D /* glad.c in Sources */,
+				84107B1B2133FF9F006D310E /* textures.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +274,7 @@
 					/usr/local/Cellar/glew/2.1.0/include,
 					/usr/local/Cellar/glfw/3.2.1/include,
 					/usr/local/include,
+					"$(PROJECT_DIR)/LearnOpenGL/",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/Cellar/glew/2.1.0/lib,
@@ -283,6 +292,7 @@
 					/usr/local/Cellar/glew/2.1.0/include,
 					/usr/local/Cellar/glfw/3.2.1/include,
 					/usr/local/include,
+					"$(PROJECT_DIR)/LearnOpenGL/",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					/usr/local/Cellar/glew/2.1.0/lib,
