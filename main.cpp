@@ -30,7 +30,7 @@ const char *fragmentShaderSource = "#version 330 core\n"
                                    "void main()\n"
                                    "{\n"
                                    "    FragColor = vec4(1.0f,0.5f,0.2f,1.0f);\n"
-                                   "}\n";
+                                   "}\n\0";
 
 int main(void)
 {
@@ -39,6 +39,7 @@ int main(void)
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,3);
     glfwWindowHint(GLFW_OPENGL_PROFILE,GLFW_OPENGL_CORE_PROFILE);
+    // Mac OSX 专供
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT,GL_TRUE);
 
     GLFWwindow* window = glfwCreateWindow(800,600,"LearnOpenGL",NULL,NULL);
@@ -50,6 +51,7 @@ int main(void)
         return -1;
     }
     glfwMakeContextCurrent(window);
+    glfwSetFramebufferSizeCallback(window,framebuffer_size_callback);
 
     if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
@@ -57,20 +59,8 @@ int main(void)
         return -1;
     }
 
-    glViewport(0,0,800,600);
-    glfwSetFramebufferSizeCallback(window,framebuffer_size_callback);
-
-    float vertices[] = {
-            -0.5f,-0.5f,0.0f,
-            0.5f,-0.5f,0.0f,
-            0.0f,0.5f,0.0f
-    };
-
-    unsigned int VBO;
-    glGenBuffers(1,&VBO);
-
-    glBindBuffer(GL_ARRAY_BUFFER,VBO);
-    glBufferData(GL_ARRAY_BUFFER,sizeof(vertices),vertices,GL_STATIC_DRAW);
+    //glViewport(0,0,800,600);
+    //glfwSetFramebufferSizeCallback(window,framebuffer_size_callback);
 
     unsigned int vertexShader;
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -113,16 +103,34 @@ int main(void)
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
-    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,3* sizeof(float),(void*)0);
-    glEnableVertexAttribArray(0);
 
-    unsigned int VAO;
+    float vertices[] = {
+            // 第一个三角形
+            0.5f,0.5f,0.0f,   // 右上角
+            0.5f,-0.5f,0.0f,    // 右下角
+            -0.5f,-0.5f,0.0f,     // 左上角
+            -0.5f,0.5f,0.0f,   // 左下角
+    };
+
+    unsigned int indices[] = {  // 注意索引从0开始！
+            0,1,3,   // 第一个三角形
+            1,2,3,   // 第二个三角形
+    };
+
+    unsigned int VBO,VAO,EBO;
+
+    glGenBuffers(1,&VBO);
     glGenVertexArrays(1,&VAO);
+    glGenBuffers(1,&EBO);
 
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER,VBO);
     glBufferData(GL_ARRAY_BUFFER,sizeof(vertices),vertices,GL_STATIC_DRAW);
+
+    // 绑定EBO，并把索引复制到缓冲里
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER,sizeof(indices),indices,GL_STATIC_DRAW);
 
     glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,3*sizeof(float),(void*)0);
     glEnableVertexAttribArray(0);
@@ -141,8 +149,8 @@ int main(void)
 
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES,0,3);
-
+        //glDrawArrays(GL_TRIANGLES,0,3);
+        glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,0);
         // 检查并调用事件，交换缓冲
         glfwSwapBuffers(window);
         glfwPollEvents();
@@ -150,6 +158,7 @@ int main(void)
 
     glDeleteVertexArrays(1,&VAO);
     glDeleteBuffers(1,&VBO);
+    glDeleteBuffers(1,&EBO);
 
     glfwTerminate();
     return 0;
