@@ -5,8 +5,8 @@ CMakeFiles/OpenGL.dir/src/glad.c.o
  /Users/zhangmo/LearnOpenGLCN/src/glad.c
  /usr/local/include/KHR/khrplatform.h
  /usr/local/include/glad/glad.h
-CMakeFiles/OpenGL.dir/main.cpp.o
- /Users/zhangmo/LearnOpenGLCN/main.cpp
+CMakeFiles/OpenGL.dir/05.cpp.o
+ /Users/zhangmo/LearnOpenGLCN/05.cpp
  /usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h
  /usr/local/include/KHR/khrplatform.h
  /usr/local/include/glad/glad.h

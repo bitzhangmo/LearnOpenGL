@@ -5,8 +5,8 @@ CMakeFiles/OpenGL.dir/src/glad.c.o: ../src/glad.c
 CMakeFiles/OpenGL.dir/src/glad.c.o: /usr/local/include/KHR/khrplatform.h
 CMakeFiles/OpenGL.dir/src/glad.c.o: /usr/local/include/glad/glad.h
 
-CMakeFiles/OpenGL.dir/main.cpp.o: ../main.cpp
-CMakeFiles/OpenGL.dir/main.cpp.o: /usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h
-CMakeFiles/OpenGL.dir/main.cpp.o: /usr/local/include/KHR/khrplatform.h
-CMakeFiles/OpenGL.dir/main.cpp.o: /usr/local/include/glad/glad.h
+CMakeFiles/OpenGL.dir/05.cpp.o: ../05.cpp
+CMakeFiles/OpenGL.dir/05.cpp.o: /usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h
+CMakeFiles/OpenGL.dir/05.cpp.o: /usr/local/include/KHR/khrplatform.h
+CMakeFiles/OpenGL.dir/05.cpp.o: /usr/local/include/glad/glad.h
 

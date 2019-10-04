@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhangmo/LearnOpenGLCN/main.cpp
+/Users/zhangmo/LearnOpenGLCN/05.cpp
 glad.h
 -
 glfw3.h
 -
 iostream
 -
-math.h
-/Users/zhangmo/LearnOpenGLCN/math.h
 
 /usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h
 stddef.h
