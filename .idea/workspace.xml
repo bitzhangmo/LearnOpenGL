@@ -12,33 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/06.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/shader.fs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/shader.vs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Texture/awesomeface.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Texture/container.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shader.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stb_image.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stb_image_implementation.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/05.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/05.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/05.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,10 +37,16 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -112,6 +98,9 @@
       <workItem from="1570520869369" duration="374000" />
       <workItem from="1570524029267" duration="338000" />
       <workItem from="1570524559115" duration="123000" />
+      <workItem from="1570526233342" duration="390000" />
+      <workItem from="1570526631439" duration="274000" />
+      <workItem from="1570527886977" duration="219000" />
     </task>
     <servers />
   </component>
@@ -133,5 +122,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1358" height="48" key="GridCell.Tab.0.bottom" timestamp="1570527039389">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1358" height="48" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1570527039389" />
+    <state width="1358" height="48" key="GridCell.Tab.0.center" timestamp="1570527039387">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1358" height="48" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1570527039387" />
+    <state width="1358" height="48" key="GridCell.Tab.0.left" timestamp="1570527039386">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1358" height="48" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1570527039386" />
+    <state width="1358" height="48" key="GridCell.Tab.0.right" timestamp="1570527039388">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1358" height="48" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1570527039388" />
+    <state x="205" y="100" key="SettingsEditor" timestamp="1570526816582">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="205" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1570526816582" />
+    <state x="390" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1570526234666">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="390" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1570526234666" />
   </component>
 </project>
