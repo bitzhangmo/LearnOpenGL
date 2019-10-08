@@ -88,10 +88,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/05.cpp">
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/07.cpp">
+			<Option target="OpenGL"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Shader/shader.fs">
+			<Option target="OpenGL"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Shader/shader.vs">
+			<Option target="OpenGL"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/shader.h">
 			<Option target="OpenGL"/>
 		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/src/glad.c">
+			<Option target="OpenGL"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/stb_image.h">
+			<Option target="OpenGL"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/stb_image_implementation.cpp">
 			<Option target="OpenGL"/>
 		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/CMakeLists.txt">

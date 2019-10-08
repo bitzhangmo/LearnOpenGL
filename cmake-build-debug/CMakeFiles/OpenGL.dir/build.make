@@ -70,34 +70,49 @@ CMakeFiles/OpenGL.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OpenGL.dir/src/glad.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zhangmo/LearnOpenGLCN/src/glad.c -o CMakeFiles/OpenGL.dir/src/glad.c.s
 
-CMakeFiles/OpenGL.dir/05.cpp.o: CMakeFiles/OpenGL.dir/flags.make
-CMakeFiles/OpenGL.dir/05.cpp.o: ../05.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL.dir/05.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL.dir/05.cpp.o -c /Users/zhangmo/LearnOpenGLCN/05.cpp
+CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o: CMakeFiles/OpenGL.dir/flags.make
+CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o: ../stb_image_implementation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o -c /Users/zhangmo/LearnOpenGLCN/stb_image_implementation.cpp
 
-CMakeFiles/OpenGL.dir/05.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL.dir/05.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangmo/LearnOpenGLCN/05.cpp > CMakeFiles/OpenGL.dir/05.cpp.i
+CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangmo/LearnOpenGLCN/stb_image_implementation.cpp > CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.i
 
-CMakeFiles/OpenGL.dir/05.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/05.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangmo/LearnOpenGLCN/05.cpp -o CMakeFiles/OpenGL.dir/05.cpp.s
+CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangmo/LearnOpenGLCN/stb_image_implementation.cpp -o CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.s
+
+CMakeFiles/OpenGL.dir/07.cpp.o: CMakeFiles/OpenGL.dir/flags.make
+CMakeFiles/OpenGL.dir/07.cpp.o: ../07.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenGL.dir/07.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL.dir/07.cpp.o -c /Users/zhangmo/LearnOpenGLCN/07.cpp
+
+CMakeFiles/OpenGL.dir/07.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL.dir/07.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangmo/LearnOpenGLCN/07.cpp > CMakeFiles/OpenGL.dir/07.cpp.i
+
+CMakeFiles/OpenGL.dir/07.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/07.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangmo/LearnOpenGLCN/07.cpp -o CMakeFiles/OpenGL.dir/07.cpp.s
 
 # Object files for target OpenGL
 OpenGL_OBJECTS = \
 "CMakeFiles/OpenGL.dir/src/glad.c.o" \
-"CMakeFiles/OpenGL.dir/05.cpp.o"
+"CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o" \
+"CMakeFiles/OpenGL.dir/07.cpp.o"
 
 # External object files for target OpenGL
 OpenGL_EXTERNAL_OBJECTS =
 
 OpenGL: CMakeFiles/OpenGL.dir/src/glad.c.o
-OpenGL: CMakeFiles/OpenGL.dir/05.cpp.o
+OpenGL: CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o
+OpenGL: CMakeFiles/OpenGL.dir/07.cpp.o
 OpenGL: CMakeFiles/OpenGL.dir/build.make
 OpenGL: /usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.dylib
 OpenGL: /usr/local/Cellar/glfw/3.3/lib/libglfw.3.dylib
 OpenGL: CMakeFiles/OpenGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable OpenGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

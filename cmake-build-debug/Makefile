@@ -123,32 +123,32 @@ OpenGL/fast:
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/build
 .PHONY : OpenGL/fast
 
-05.o: 05.cpp.o
+07.o: 07.cpp.o
 
-.PHONY : 05.o
+.PHONY : 07.o
 
 # target to build an object file
-05.cpp.o:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/05.cpp.o
-.PHONY : 05.cpp.o
+07.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/07.cpp.o
+.PHONY : 07.cpp.o
 
-05.i: 05.cpp.i
+07.i: 07.cpp.i
 
-.PHONY : 05.i
+.PHONY : 07.i
 
 # target to preprocess a source file
-05.cpp.i:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/05.cpp.i
-.PHONY : 05.cpp.i
+07.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/07.cpp.i
+.PHONY : 07.cpp.i
 
-05.s: 05.cpp.s
+07.s: 07.cpp.s
 
-.PHONY : 05.s
+.PHONY : 07.s
 
 # target to generate assembly for a file
-05.cpp.s:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/05.cpp.s
-.PHONY : 05.cpp.s
+07.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/07.cpp.s
+.PHONY : 07.cpp.s
 
 src/glad.o: src/glad.c.o
 
@@ -177,6 +177,33 @@ src/glad.c.s:
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
+stb_image_implementation.o: stb_image_implementation.cpp.o
+
+.PHONY : stb_image_implementation.o
+
+# target to build an object file
+stb_image_implementation.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o
+.PHONY : stb_image_implementation.cpp.o
+
+stb_image_implementation.i: stb_image_implementation.cpp.i
+
+.PHONY : stb_image_implementation.i
+
+# target to preprocess a source file
+stb_image_implementation.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.i
+.PHONY : stb_image_implementation.cpp.i
+
+stb_image_implementation.s: stb_image_implementation.cpp.s
+
+.PHONY : stb_image_implementation.s
+
+# target to generate assembly for a file
+stb_image_implementation.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.s
+.PHONY : stb_image_implementation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OpenGL"
-	@echo "... 05.o"
-	@echo "... 05.i"
-	@echo "... 05.s"
+	@echo "... 07.o"
+	@echo "... 07.i"
+	@echo "... 07.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
+	@echo "... stb_image_implementation.o"
+	@echo "... stb_image_implementation.i"
+	@echo "... stb_image_implementation.s"
 .PHONY : help
 
 
