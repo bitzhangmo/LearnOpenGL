@@ -88,13 +88,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/07.cpp">
-			<Option target="OpenGL"/>
-		</Unit>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Shader/shader.fs">
-			<Option target="OpenGL"/>
-		</Unit>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Shader/shader.vs">
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/08.cpp">
 			<Option target="OpenGL"/>
 		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/shader.h">

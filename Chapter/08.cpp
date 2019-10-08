@@ -1,27 +1,23 @@
 //
-// Created by 王啸川 on 2019/10/5.
-//
-
-//
-// Created by 王啸川 on 2019/10/5.
-//
-
-//
-// Created by 王啸川 on 2019/10/3.
+// Created by 王啸川 on 2019/10/8.
 //
 
 #include <glad.h>
 #include <glfw3.h>
 #include <iostream>
 
-#include "shader.h"
-#include "stb_image.h"
+#include "../shader.h"
+#include "../stb_image.h"
 
-#include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
-#include "glm/gtc/type_ptr.hpp"
+#include "../glm/glm.hpp"
+#include "../glm/gtc/matrix_transform.hpp"
+#include "../glm/gtc/type_ptr.hpp"
 
 using namespace std;
+
+// settings
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
 
 void framebuffer_size_callback(GLFWwindow* window,int width,int height);
 void processInput(GLFWwindow *window);
@@ -47,7 +43,7 @@ int main(void)
     // Mac OSX 专供
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT,GL_TRUE);
 
-    GLFWwindow* window = glfwCreateWindow(800,600,"LearnOpenGL",NULL,NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH,SCR_HEIGHT,"LearnOpenGL",NULL,NULL);
 
     if(window == NULL)
     {
@@ -67,15 +63,15 @@ int main(void)
     //glViewport(0,0,800,600);
     //glfwSetFramebufferSizeCallback(window,framebuffer_size_callback);
 
-    Shader ourShader("../Shader/shader.vs","../Shader/shader.fs");
+    Shader ourShader("../Shader/Vertex.glsl","../Shader/Fragment.glsl");
 
 
     float vertices[] = {
-            // 位置              // 颜色
-            0.5f,0.5f,0.0f,    1.0f,0.0f,0.0f,     1.0f,1.0f,
-            0.5f,-0.5f,0.0f,   0.0f,1.0f,0.0f,     1.0f,0.0f,
-            -0.5f,-0.5f,0.0f,  0.0f,0.0f,1.0f,     0.0f,0.0f,
-            -0.5f,0.5f,0.0f,   1.0f,1.0f,0.0f,     0.0f,1.0f,
+            // 位置             // 纹理
+            0.5f,0.5f,0.0f,    1.0f,1.0f,
+            0.5f,-0.5f,0.0f,   1.0f,0.0f,
+            -0.5f,-0.5f,0.0f,  0.0f,0.0f,
+            -0.5f,0.5f,0.0f,   0.0f,1.0f,
     };
 
     unsigned int indices[] = {
@@ -105,14 +101,14 @@ int main(void)
 
 
     // 解析顶点数据，并启用顶点数据，设置顶点属性指针
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,8*sizeof(float),(void*)(3* sizeof(float)));
+    glVertexAttribPointer(1,2,GL_FLOAT,GL_FALSE,5*sizeof(float),(void*)(3* sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    glVertexAttribPointer(2,2,GL_FLOAT,GL_FALSE,8*sizeof(float),(void*)(6* sizeof(float)));
-    glEnableVertexAttribArray(2);
+    //glVertexAttribPointer(2,2,GL_FLOAT,GL_FALSE,8*sizeof(float),(void*)(6* sizeof(float)));
+    //glEnableVertexAttribArray(2);
 
     unsigned int texture1,texture2;
     glGenTextures(1,&texture1);
@@ -178,7 +174,6 @@ int main(void)
 
     //glm::vec4 vec(1.0f,0.0f,0.0f,1.0f);
 
-
     while(!glfwWindowShouldClose(window))
     {
         // 输入
@@ -193,15 +188,21 @@ int main(void)
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D,texture2);
 
-        glm::mat4 trans = glm::mat4(1.0f);;
-        //trans = glm::rotate(trans,glm::radians(90.0f),glm::vec3(0.0,0.0,1.0));
-        //trans = glm::scale(trans,glm::vec3(0.5,0.5,0.5));
-        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
-        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
-
         ourShader.use();
-        unsigned int transformLoc = glGetUniformLocation(ourShader.ID,"transform");
-        glUniformMatrix4fv(transformLoc,1,GL_FALSE,glm::value_ptr(trans));
+
+        glm::mat4 model = glm::mat4(1.0f);
+        glm::mat4 view = glm::mat4(1.0f);
+        glm::mat4 projection = glm::mat4(1.0f);
+
+        model = glm::rotate(model,glm::radians(-55.0f),glm::vec3(1.0f,0.0f,0.0f));
+        view = glm::translate(view,glm::vec3(0.0f,0.0f,-3.0f));
+        projection = glm::perspective(glm::radians(45.0f),(float)SCR_WIDTH/(float)SCR_HEIGHT,0.1f,100.0f);
+
+        unsigned int modelLoc = glGetUniformLocation(ourShader.ID,"model");
+        unsigned int viewLoc = glGetUniformLocation(ourShader.ID,"view");
+        glUniformMatrix4fv(modelLoc,1,GL_FALSE,glm::value_ptr(model));
+        glUniformMatrix4fv(viewLoc,1,GL_FALSE,&view[0][0]);
+        ourShader.setMat4("projection",projection);
 
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);

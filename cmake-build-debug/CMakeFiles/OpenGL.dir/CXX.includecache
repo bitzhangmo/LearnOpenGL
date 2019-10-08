@@ -6,22 +6,22 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhangmo/LearnOpenGLCN/07.cpp
+/Users/zhangmo/LearnOpenGLCN/Chapter/08.cpp
 glad.h
 -
 glfw3.h
 -
 iostream
 -
-shader.h
+../shader.h
 /Users/zhangmo/LearnOpenGLCN/shader.h
-stb_image.h
+../stb_image.h
 /Users/zhangmo/LearnOpenGLCN/stb_image.h
-glm/glm.hpp
+../glm/glm.hpp
 /Users/zhangmo/LearnOpenGLCN/glm/glm.hpp
-glm/gtc/matrix_transform.hpp
+../glm/gtc/matrix_transform.hpp
 /Users/zhangmo/LearnOpenGLCN/glm/gtc/matrix_transform.hpp
-glm/gtc/type_ptr.hpp
+../glm/gtc/type_ptr.hpp
 /Users/zhangmo/LearnOpenGLCN/glm/gtc/type_ptr.hpp
 
 /Users/zhangmo/LearnOpenGLCN/glm/common.hpp
@@ -835,6 +835,8 @@ sstream
 -
 iostream
 -
+glm/glm.hpp
+/Users/zhangmo/LearnOpenGLCN/glm/glm.hpp
 
 /Users/zhangmo/LearnOpenGLCN/stb_image.h
 stb_image.h
