@@ -123,32 +123,32 @@ OpenGL/fast:
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/build
 .PHONY : OpenGL/fast
 
-Chapter/08.o: Chapter/08.cpp.o
+Chapter/09.o: Chapter/09.cpp.o
 
-.PHONY : Chapter/08.o
+.PHONY : Chapter/09.o
 
 # target to build an object file
-Chapter/08.cpp.o:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/08.cpp.o
-.PHONY : Chapter/08.cpp.o
+Chapter/09.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/09.cpp.o
+.PHONY : Chapter/09.cpp.o
 
-Chapter/08.i: Chapter/08.cpp.i
+Chapter/09.i: Chapter/09.cpp.i
 
-.PHONY : Chapter/08.i
+.PHONY : Chapter/09.i
 
 # target to preprocess a source file
-Chapter/08.cpp.i:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/08.cpp.i
-.PHONY : Chapter/08.cpp.i
+Chapter/09.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/09.cpp.i
+.PHONY : Chapter/09.cpp.i
 
-Chapter/08.s: Chapter/08.cpp.s
+Chapter/09.s: Chapter/09.cpp.s
 
-.PHONY : Chapter/08.s
+.PHONY : Chapter/09.s
 
 # target to generate assembly for a file
-Chapter/08.cpp.s:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/08.cpp.s
-.PHONY : Chapter/08.cpp.s
+Chapter/09.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/09.cpp.s
+.PHONY : Chapter/09.cpp.s
 
 src/glad.o: src/glad.c.o
 
@@ -213,9 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OpenGL"
-	@echo "... Chapter/08.o"
-	@echo "... Chapter/08.i"
-	@echo "... Chapter/08.s"
+	@echo "... Chapter/09.o"
+	@echo "... Chapter/09.i"
+	@echo "... Chapter/09.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
