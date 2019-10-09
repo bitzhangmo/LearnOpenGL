@@ -28,8 +28,17 @@ glm::vec3 cameraUp = glm::vec3(0.0f,1.0f,0.0f);
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+float yaw = 0.0f;
+float pitch = 0.0f;
+
+float lastX = SCR_WIDTH/2;
+float lastY = SCR_HEIGHT/2;
+
+bool firstMouse = true;
+
 void framebuffer_size_callback(GLFWwindow* window,int width,int height);
 void processInput(GLFWwindow *window);
+void mouse_callback(GLFWwindow *window, double xpos,double ypos);
 
 void framebuffer_size_callback(GLFWwindow* window,int width,int height)
 {
@@ -62,6 +71,9 @@ int main(void)
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
+
+    glfwSetInputMode(window,GLFW_CURSOR,GLFW_CURSOR_DISABLED);
+    glfwSetCursorPosCallback(window,mouse_callback);
 
     //glViewport(0,0,800,600);
     //glfwSetFramebufferSizeCallback(window,framebuffer_size_callback);
@@ -299,4 +311,41 @@ void processInput(GLFWwindow *window)
         cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
     if(glfwGetKey(window,GLFW_KEY_D) == GLFW_PRESS)
         cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+}
+
+void mouse_callback(GLFWwindow *window,double xpos,double ypos)
+{
+
+    if(firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos;
+    lastX = xpos;
+    lastY = ypos;
+
+    float sensitivity = 0.05f;
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+
+    yaw += xoffset;
+    pitch += yoffset;
+
+    if(pitch > 89.0f)
+        pitch = 89.0f;
+    if(pitch < -89.0f)
+        pitch = -89.0f;
+
+    glm::vec3 front;
+    front.x = cos(glm::radians(pitch)) * cos(glm::radians(yaw));
+    front.y = sin(glm::radians(pitch));
+    front.z = cos(glm::radians(pitch)) * sin(glm::radians(yaw));
+
+    cameraFront = glm::normalize(front);
+
+
 }
