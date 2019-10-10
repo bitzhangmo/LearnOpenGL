@@ -6,8 +6,8 @@
 #include <glfw3.h>
 #include <iostream>
 
-#include "../shader.h"
-#include "../stb_image.h"
+#include "../Header/shader.h"
+#include "../Header/stb_image.h"
 
 #include "../glm/glm.hpp"
 #include "../glm/gtc/matrix_transform.hpp"

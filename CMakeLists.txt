@@ -16,7 +16,7 @@ link_libraries(${OPENGL} ${GLEW_LINK} ${GLFW_LINK})
 
 # 执行编译命令
 # 这个glad.c在第2步中说过要拉到项目中，注意路径
-set(SOURCE_FILES "src/glad.c" shader.h stb_image.h stb_image_implementation.cpp Chapter/09.cpp )
+set(SOURCE_FILES "src/glad.c" Header/shader.h Header/stb_image.h stb_image_implementation.cpp Chapter/09.cpp Header/Camera.h)
 add_executable(OpenGL ${SOURCE_FILES})
 
 # mac下这步很重要

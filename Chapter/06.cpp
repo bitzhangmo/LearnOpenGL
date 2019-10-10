@@ -10,8 +10,8 @@
 #include <glfw3.h>
 #include <iostream>
 
-#include "../shader.h"
-#include "../stb_image.h"
+#include "../Header/shader.h"
+#include "../Header/stb_image.h"
 using namespace std;
 
 void framebuffer_size_callback(GLFWwindow* window,int width,int height);

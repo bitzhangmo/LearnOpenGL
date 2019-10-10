@@ -91,13 +91,16 @@
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/09.cpp">
 			<Option target="OpenGL"/>
 		</Unit>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/shader.h">
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/Camera.h">
+			<Option target="OpenGL"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/shader.h">
+			<Option target="OpenGL"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/stb_image.h">
 			<Option target="OpenGL"/>
 		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/src/glad.c">
-			<Option target="OpenGL"/>
-		</Unit>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/stb_image.h">
 			<Option target="OpenGL"/>
 		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/stb_image_implementation.cpp">

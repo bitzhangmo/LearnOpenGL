@@ -6,6 +6,9 @@ CMakeFiles/OpenGL.dir/src/glad.c.o: /usr/local/include/KHR/khrplatform.h
 CMakeFiles/OpenGL.dir/src/glad.c.o: /usr/local/include/glad/glad.h
 
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../Chapter/09.cpp
+CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../Header/Camera.h
+CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../Header/shader.h
+CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../Header/stb_image.h
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../glm/common.hpp
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../glm/detail/_fixes.hpp
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../glm/detail/_swizzle.hpp
@@ -107,12 +110,10 @@ CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../glm/vec2.hpp
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../glm/vec3.hpp
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../glm/vec4.hpp
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../glm/vector_relational.hpp
-CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../shader.h
-CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: ../stb_image.h
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: /usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: /usr/local/include/KHR/khrplatform.h
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o: /usr/local/include/glad/glad.h
 
-CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o: ../stb_image.h
+CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o: ../Header/stb_image.h
 CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o: ../stb_image_implementation.cpp
 

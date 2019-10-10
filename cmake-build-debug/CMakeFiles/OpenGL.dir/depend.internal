@@ -7,6 +7,9 @@ CMakeFiles/OpenGL.dir/src/glad.c.o
  /usr/local/include/glad/glad.h
 CMakeFiles/OpenGL.dir/Chapter/09.cpp.o
  /Users/zhangmo/LearnOpenGLCN/Chapter/09.cpp
+ /Users/zhangmo/LearnOpenGLCN/Header/Camera.h
+ /Users/zhangmo/LearnOpenGLCN/Header/shader.h
+ /Users/zhangmo/LearnOpenGLCN/Header/stb_image.h
  /Users/zhangmo/LearnOpenGLCN/glm/common.hpp
  /Users/zhangmo/LearnOpenGLCN/glm/detail/_fixes.hpp
  /Users/zhangmo/LearnOpenGLCN/glm/detail/_swizzle.hpp
@@ -108,11 +111,9 @@ CMakeFiles/OpenGL.dir/Chapter/09.cpp.o
  /Users/zhangmo/LearnOpenGLCN/glm/vec3.hpp
  /Users/zhangmo/LearnOpenGLCN/glm/vec4.hpp
  /Users/zhangmo/LearnOpenGLCN/glm/vector_relational.hpp
- /Users/zhangmo/LearnOpenGLCN/shader.h
- /Users/zhangmo/LearnOpenGLCN/stb_image.h
  /usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h
  /usr/local/include/KHR/khrplatform.h
  /usr/local/include/glad/glad.h
 CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o
- /Users/zhangmo/LearnOpenGLCN/stb_image.h
+ /Users/zhangmo/LearnOpenGLCN/Header/stb_image.h
  /Users/zhangmo/LearnOpenGLCN/stb_image_implementation.cpp
