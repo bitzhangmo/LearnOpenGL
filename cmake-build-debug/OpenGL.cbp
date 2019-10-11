@@ -88,7 +88,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/09.cpp">
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/02_01.cpp">
 			<Option target="OpenGL"/>
 		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/Camera.h">

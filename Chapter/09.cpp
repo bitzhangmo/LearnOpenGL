@@ -220,6 +220,8 @@ int main(void)
     ourShader.setInt("texture1", 0);
     ourShader.setInt("texture2", 1);
 
+    glEnable(GL_DEPTH_TEST);
+
     while(!glfwWindowShouldClose(window))
     {
         float currentFrame = glfwGetTime();
@@ -239,7 +241,7 @@ int main(void)
         glBindTexture(GL_TEXTURE_2D,texture2);
 
         ourShader.use();
-        
+
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         ourShader.setMat4("projection", projection);
 
