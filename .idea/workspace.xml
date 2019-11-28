@@ -12,13 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter/02_02.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0202Fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0202LightFragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0202LightVertex.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0202Vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/02_03.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/02_04.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0203/Fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0203/LightFragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0203/LightVertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0203/Vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0204/Fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0204/LightFragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0204/LightVertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0204/Vertex.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0201Fragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0201/0201Fragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0201LightFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0201/0201LightFragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0201LightVertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0201/0201LightVertex.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0201Vertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0201/0201Vertex.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0202Fragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0202/0202Fragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0202LightFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0202/0202LightFragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0202LightVertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0202/0202LightVertex.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0202Vertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0202/0202Vertex.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" afterDir="false" />
@@ -66,15 +79,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shader/0202" />
+      <recent name="$PROJECT_DIR$/Shader/0201" />
       <recent name="$PROJECT_DIR$/Header" />
       <recent name="$PROJECT_DIR$/Chapter" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Texture" />
-      <recent name="$PROJECT_DIR$/Shader" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -130,6 +143,10 @@
       <workItem from="1570689553345" duration="5471000" />
       <workItem from="1570775224403" duration="6496000" />
       <workItem from="1570794515105" duration="4453000" />
+      <workItem from="1570864488474" duration="867000" />
+      <workItem from="1574761179447" duration="41000" />
+      <workItem from="1574761255662" duration="543000" />
+      <workItem from="1574926248319" duration="5550000" />
     </task>
     <servers />
   </component>

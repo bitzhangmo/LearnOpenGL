@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/OpenGL.dir/Chapter/02_02.cpp.o"
+  "CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o"
   "CMakeFiles/OpenGL.dir/src/glad.c.o"
   "CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o"
   "OpenGL"
