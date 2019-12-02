@@ -6,9 +6,13 @@ CMakeFiles/OpenGL.dir/src/glad.c.o: /usr/local/include/KHR/khrplatform.h
 CMakeFiles/OpenGL.dir/src/glad.c.o: /usr/local/include/glad/glad.h
 
 CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Chapter/02_04.cpp
-CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/Camera.h
-CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/shader.h
-CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/stb_image.h
+CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/LocalHeader/Camera.h
+CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/LocalHeader/shader.h
+CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/LocalHeader/stb_image.h
+CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/imgui/imconfig.h
+CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/imgui/imgui.h
+CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/imgui/imgui_impl_glfw.h
+CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Header/imgui/imgui_impl_opengl3.h
 CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../glm/common.hpp
 CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../glm/detail/_fixes.hpp
 CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../glm/detail/_swizzle.hpp
@@ -113,7 +117,4 @@ CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../glm/vector_relational.hpp
 CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: /usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h
 CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: /usr/local/include/KHR/khrplatform.h
 CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: /usr/local/include/glad/glad.h
-
-CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o: ../Header/stb_image.h
-CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o: ../stb_image_implementation.cpp
 

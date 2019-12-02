@@ -16,8 +16,17 @@ link_libraries(${OPENGL} ${GLEW_LINK} ${GLFW_LINK})
 
 # 执行编译命令
 # 这个glad.c在第2步中说过要拉到项目中，注意路径
-set(SOURCE_FILES "src/glad.c" Header/shader.h Header/stb_image.h stb_image_implementation.cpp Header/Camera.h Chapter/02_04.cpp)
-add_executable(OpenGL ${SOURCE_FILES})
+set(SOURCE_FILES "src/glad.c")
+
+add_executable(OpenGL ${SOURCE_FILES} Chapter/02_04.cpp)
+
+# 添加Header/imgui子目录
+add_subdirectory(Header/imgui)
+# 添加链接库
+target_link_libraries(OpenGL ImGUI)
+
+add_subdirectory(Header/LocalHeader)
+target_link_libraries(OpenGL LOCALHEADER)
 
 # mac下这步很重要
 if (APPLE)

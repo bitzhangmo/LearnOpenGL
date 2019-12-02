@@ -123,6 +123,32 @@ OpenGL/fast:
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/build
 .PHONY : OpenGL/fast
 
+#=============================================================================
+# Target rules for targets named ImGUI
+
+# Build rule for target.
+ImGUI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ImGUI
+.PHONY : ImGUI
+
+# fast build rule for target.
+ImGUI/fast:
+	$(MAKE) -f Header/imgui/CMakeFiles/ImGUI.dir/build.make Header/imgui/CMakeFiles/ImGUI.dir/build
+.PHONY : ImGUI/fast
+
+#=============================================================================
+# Target rules for targets named LOCALHEADER
+
+# Build rule for target.
+LOCALHEADER: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LOCALHEADER
+.PHONY : LOCALHEADER
+
+# fast build rule for target.
+LOCALHEADER/fast:
+	$(MAKE) -f Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build.make Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build
+.PHONY : LOCALHEADER/fast
+
 Chapter/02_04.o: Chapter/02_04.cpp.o
 
 .PHONY : Chapter/02_04.o
@@ -177,33 +203,6 @@ src/glad.c.s:
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
-stb_image_implementation.o: stb_image_implementation.cpp.o
-
-.PHONY : stb_image_implementation.o
-
-# target to build an object file
-stb_image_implementation.cpp.o:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o
-.PHONY : stb_image_implementation.cpp.o
-
-stb_image_implementation.i: stb_image_implementation.cpp.i
-
-.PHONY : stb_image_implementation.i
-
-# target to preprocess a source file
-stb_image_implementation.cpp.i:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.i
-.PHONY : stb_image_implementation.cpp.i
-
-stb_image_implementation.s: stb_image_implementation.cpp.s
-
-.PHONY : stb_image_implementation.s
-
-# target to generate assembly for a file
-stb_image_implementation.cpp.s:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.s
-.PHONY : stb_image_implementation.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +212,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OpenGL"
+	@echo "... ImGUI"
+	@echo "... LOCALHEADER"
 	@echo "... Chapter/02_04.o"
 	@echo "... Chapter/02_04.i"
 	@echo "... Chapter/02_04.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
-	@echo "... stb_image_implementation.o"
-	@echo "... stb_image_implementation.i"
-	@echo "... stb_image_implementation.s"
 .PHONY : help
 
 

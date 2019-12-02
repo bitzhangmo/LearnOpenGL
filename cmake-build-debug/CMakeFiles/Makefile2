@@ -54,16 +54,21 @@ CMAKE_BINARY_DIR = /Users/zhangmo/LearnOpenGLCN/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/OpenGL.dir/all
+all: Header/imgui/all
+all: Header/LocalHeader/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/OpenGL.dir/clean
+clean: Header/imgui/clean
+clean: Header/LocalHeader/clean
 
 .PHONY : clean
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: Header/imgui/preinstall
+preinstall: Header/LocalHeader/preinstall
 
 .PHONY : preinstall
 
@@ -71,15 +76,16 @@ preinstall:
 # Target rules for target CMakeFiles/OpenGL.dir
 
 # All Build rule for target.
-CMakeFiles/OpenGL.dir/all:
+CMakeFiles/OpenGL.dir/all: Header/imgui/CMakeFiles/ImGUI.dir/all
+CMakeFiles/OpenGL.dir/all: Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/all
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/depend
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target OpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=10,11,12 "Built target OpenGL"
 .PHONY : CMakeFiles/OpenGL.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OpenGL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/OpenGL.dir/rule
@@ -93,6 +99,96 @@ OpenGL: CMakeFiles/OpenGL.dir/rule
 CMakeFiles/OpenGL.dir/clean:
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/clean
 .PHONY : CMakeFiles/OpenGL.dir/clean
+
+#=============================================================================
+# Directory level rules for directory Header/imgui
+
+# Recursive "all" directory target.
+Header/imgui/all: Header/imgui/CMakeFiles/ImGUI.dir/all
+
+.PHONY : Header/imgui/all
+
+# Recursive "clean" directory target.
+Header/imgui/clean: Header/imgui/CMakeFiles/ImGUI.dir/clean
+
+.PHONY : Header/imgui/clean
+
+# Recursive "preinstall" directory target.
+Header/imgui/preinstall:
+
+.PHONY : Header/imgui/preinstall
+
+#=============================================================================
+# Target rules for target Header/imgui/CMakeFiles/ImGUI.dir
+
+# All Build rule for target.
+Header/imgui/CMakeFiles/ImGUI.dir/all:
+	$(MAKE) -f Header/imgui/CMakeFiles/ImGUI.dir/build.make Header/imgui/CMakeFiles/ImGUI.dir/depend
+	$(MAKE) -f Header/imgui/CMakeFiles/ImGUI.dir/build.make Header/imgui/CMakeFiles/ImGUI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ImGUI"
+.PHONY : Header/imgui/CMakeFiles/ImGUI.dir/all
+
+# Build rule for subdir invocation for target.
+Header/imgui/CMakeFiles/ImGUI.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 Header/imgui/CMakeFiles/ImGUI.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles 0
+.PHONY : Header/imgui/CMakeFiles/ImGUI.dir/rule
+
+# Convenience name for target.
+ImGUI: Header/imgui/CMakeFiles/ImGUI.dir/rule
+
+.PHONY : ImGUI
+
+# clean rule for target.
+Header/imgui/CMakeFiles/ImGUI.dir/clean:
+	$(MAKE) -f Header/imgui/CMakeFiles/ImGUI.dir/build.make Header/imgui/CMakeFiles/ImGUI.dir/clean
+.PHONY : Header/imgui/CMakeFiles/ImGUI.dir/clean
+
+#=============================================================================
+# Directory level rules for directory Header/LocalHeader
+
+# Recursive "all" directory target.
+Header/LocalHeader/all: Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/all
+
+.PHONY : Header/LocalHeader/all
+
+# Recursive "clean" directory target.
+Header/LocalHeader/clean: Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/clean
+
+.PHONY : Header/LocalHeader/clean
+
+# Recursive "preinstall" directory target.
+Header/LocalHeader/preinstall:
+
+.PHONY : Header/LocalHeader/preinstall
+
+#=============================================================================
+# Target rules for target Header/LocalHeader/CMakeFiles/LOCALHEADER.dir
+
+# All Build rule for target.
+Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/all:
+	$(MAKE) -f Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build.make Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/depend
+	$(MAKE) -f Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build.make Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target LOCALHEADER"
+.PHONY : Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/all
+
+# Build rule for subdir invocation for target.
+Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles 0
+.PHONY : Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/rule
+
+# Convenience name for target.
+LOCALHEADER: Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/rule
+
+.PHONY : LOCALHEADER
+
+# clean rule for target.
+Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/clean:
+	$(MAKE) -f Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build.make Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/clean
+.PHONY : Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

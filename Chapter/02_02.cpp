@@ -10,9 +10,9 @@
 #include "../glm/gtc/matrix_transform.hpp"
 #include "../glm/gtc/type_ptr.hpp"
 
-#include "../Header/shader.h"
-#include "../Header/stb_image.h"
-#include "../Header/Camera.h"
+#include "../Header/LocalHeader/shader.h"
+#include "../Header/LocalHeader/stb_image.h"
+#include "../Header/LocalHeader/Camera.h"
 
 using namespace std;
 

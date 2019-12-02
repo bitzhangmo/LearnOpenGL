@@ -5,7 +5,7 @@
 		<Option title="OpenGL"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Header\;CMake Files\Header\imgui\;CMake Files\Header\LocalHeader\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug"/>
@@ -87,27 +87,151 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="ImGUI">
+				<Option output="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/libImGUI.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/glew/2.1.0/include/GL"/>
+					<Add directory="/usr/local/Cellar/glfw/3.3/include/GLFW"/>
+					<Add directory="/usr/local/include/glad"/>
+					<Add directory="/usr/local/include/KHR"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/Makefile&quot;  VERBOSE=1 ImGUI"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ImGUI/fast">
+				<Option output="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/libImGUI.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/glew/2.1.0/include/GL"/>
+					<Add directory="/usr/local/Cellar/glfw/3.3/include/GLFW"/>
+					<Add directory="/usr/local/include/glad"/>
+					<Add directory="/usr/local/include/KHR"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/Makefile&quot;  VERBOSE=1 ImGUI/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LOCALHEADER">
+				<Option output="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/libLOCALHEADER.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/glew/2.1.0/include/GL"/>
+					<Add directory="/usr/local/Cellar/glfw/3.3/include/GLFW"/>
+					<Add directory="/usr/local/include/glad"/>
+					<Add directory="/usr/local/include/KHR"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/Makefile&quot;  VERBOSE=1 LOCALHEADER"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LOCALHEADER/fast">
+				<Option output="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/libLOCALHEADER.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/glew/2.1.0/include/GL"/>
+					<Add directory="/usr/local/Cellar/glfw/3.3/include/GLFW"/>
+					<Add directory="/usr/local/include/glad"/>
+					<Add directory="/usr/local/include/KHR"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/Makefile&quot;  VERBOSE=1 LOCALHEADER/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/02_04.cpp">
 			<Option target="OpenGL"/>
 		</Unit>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/Camera.h">
-			<Option target="OpenGL"/>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/stb_image_implementation.cpp">
+			<Option target="LOCALHEADER"/>
 		</Unit>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/shader.h">
-			<Option target="OpenGL"/>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui.cpp">
+			<Option target="ImGUI"/>
 		</Unit>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/stb_image.h">
-			<Option target="OpenGL"/>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui.h">
+			<Option target="ImGUI"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui_demo.cpp">
+			<Option target="ImGUI"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui_draw.cpp">
+			<Option target="ImGUI"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui_impl_glfw.cpp">
+			<Option target="ImGUI"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui_impl_glfw.h">
+			<Option target="ImGUI"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui_impl_opengl3.cpp">
+			<Option target="ImGUI"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui_impl_opengl3.h">
+			<Option target="ImGUI"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/imgui_widgets.cpp">
+			<Option target="ImGUI"/>
 		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/src/glad.c">
 			<Option target="OpenGL"/>
 		</Unit>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/stb_image_implementation.cpp">
-			<Option target="OpenGL"/>
-		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/imgui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Header\imgui\"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Header\LocalHeader\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

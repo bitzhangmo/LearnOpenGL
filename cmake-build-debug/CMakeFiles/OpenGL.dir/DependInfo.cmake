@@ -18,7 +18,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zhangmo/LearnOpenGLCN/Chapter/02_04.cpp" "/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o"
-  "/Users/zhangmo/LearnOpenGLCN/stb_image_implementation.cpp" "/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -32,6 +31,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/imgui/CMakeFiles/ImGUI.dir/DependInfo.cmake"
+  "/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
