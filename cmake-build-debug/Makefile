@@ -149,32 +149,32 @@ LOCALHEADER/fast:
 	$(MAKE) -f Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build.make Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build
 .PHONY : LOCALHEADER/fast
 
-Chapter/02_04.o: Chapter/02_04.cpp.o
+Chapter/02_05tech.o: Chapter/02_05tech.cpp.o
 
-.PHONY : Chapter/02_04.o
+.PHONY : Chapter/02_05tech.o
 
 # target to build an object file
-Chapter/02_04.cpp.o:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o
-.PHONY : Chapter/02_04.cpp.o
+Chapter/02_05tech.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.o
+.PHONY : Chapter/02_05tech.cpp.o
 
-Chapter/02_04.i: Chapter/02_04.cpp.i
+Chapter/02_05tech.i: Chapter/02_05tech.cpp.i
 
-.PHONY : Chapter/02_04.i
+.PHONY : Chapter/02_05tech.i
 
 # target to preprocess a source file
-Chapter/02_04.cpp.i:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.i
-.PHONY : Chapter/02_04.cpp.i
+Chapter/02_05tech.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.i
+.PHONY : Chapter/02_05tech.cpp.i
 
-Chapter/02_04.s: Chapter/02_04.cpp.s
+Chapter/02_05tech.s: Chapter/02_05tech.cpp.s
 
-.PHONY : Chapter/02_04.s
+.PHONY : Chapter/02_05tech.s
 
 # target to generate assembly for a file
-Chapter/02_04.cpp.s:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.s
-.PHONY : Chapter/02_04.cpp.s
+Chapter/02_05tech.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.s
+.PHONY : Chapter/02_05tech.cpp.s
 
 src/glad.o: src/glad.c.o
 
@@ -214,9 +214,9 @@ help:
 	@echo "... OpenGL"
 	@echo "... ImGUI"
 	@echo "... LOCALHEADER"
-	@echo "... Chapter/02_04.o"
-	@echo "... Chapter/02_04.i"
-	@echo "... Chapter/02_04.s"
+	@echo "... Chapter/02_05tech.o"
+	@echo "... Chapter/02_05tech.i"
+	@echo "... Chapter/02_05tech.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"

@@ -16,9 +16,9 @@ link_libraries(${OPENGL} ${GLEW_LINK} ${GLFW_LINK})
 
 # 执行编译命令
 # 这个glad.c在第2步中说过要拉到项目中，注意路径
-set(SOURCE_FILES "src/glad.c")
+set(SOURCE_FILES "src/glad.c" Chapter/02_05tech.cpp)
 
-add_executable(OpenGL ${SOURCE_FILES} Chapter/02_04.cpp)
+add_executable(OpenGL ${SOURCE_FILES})
 
 # 添加Header/imgui子目录
 add_subdirectory(Header/imgui)

@@ -188,7 +188,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/02_04.cpp">
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/02_05tech.cpp">
 			<Option target="OpenGL"/>
 		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/stb_image_implementation.cpp">

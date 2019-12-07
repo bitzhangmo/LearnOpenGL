@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="OpenGL" targetName="OpenGL" />
-      <config projectName="OpenGL" targetName="LOCALHEADER" />
       <config projectName="OpenGL" targetName="ImGUI" />
+      <config projectName="OpenGL" targetName="LOCALHEADER" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,29 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter/test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Header/imgui/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Header/imgui/imgui_impl_glfw.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Header/imgui/imgui_impl_glfw.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Header/imgui/imgui_impl_opengl3.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Header/imgui/imgui_impl_opengl3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/02_05.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/02_05tech.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/filesystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0205/Fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0205/LightFragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0205/LightVertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0205/Vertex.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02_01.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02_02.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_03.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02_03.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter/02_04.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02_04.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/05.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/05.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/06.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/06.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/07.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/07.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/08.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/08.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/09.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/09.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/Camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/Camera.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/shader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/stb_image.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/stb_image.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" afterDir="false" />
@@ -45,16 +32,9 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/stb_image_implementation.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stb_image_implementation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/stb_image_implementation.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +61,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RVnvorCOnaGaPICG7zqXOlYiMx" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -90,14 +70,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Chapter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shader/0205" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shader/0205" />
       <recent name="$PROJECT_DIR$/Chapter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -180,7 +162,10 @@
       <workItem from="1574761179447" duration="41000" />
       <workItem from="1574761255662" duration="543000" />
       <workItem from="1574926248319" duration="5550000" />
-      <workItem from="1575264081233" duration="4377000" />
+      <workItem from="1575264081233" duration="6617000" />
+      <workItem from="1575554828269" duration="5872000" />
+      <workItem from="1575700981385" duration="400000" />
+      <workItem from="1575701388149" duration="1359000" />
     </task>
     <servers />
   </component>

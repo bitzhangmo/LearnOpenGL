@@ -70,29 +70,29 @@ CMakeFiles/OpenGL.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OpenGL.dir/src/glad.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zhangmo/LearnOpenGLCN/src/glad.c -o CMakeFiles/OpenGL.dir/src/glad.c.s
 
-CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: CMakeFiles/OpenGL.dir/flags.make
-CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o: ../Chapter/02_04.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o -c /Users/zhangmo/LearnOpenGLCN/Chapter/02_04.cpp
+CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.o: CMakeFiles/OpenGL.dir/flags.make
+CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.o: ../Chapter/02_05tech.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.o -c /Users/zhangmo/LearnOpenGLCN/Chapter/02_05tech.cpp
 
-CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangmo/LearnOpenGLCN/Chapter/02_04.cpp > CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.i
+CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhangmo/LearnOpenGLCN/Chapter/02_05tech.cpp > CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.i
 
-CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangmo/LearnOpenGLCN/Chapter/02_04.cpp -o CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.s
+CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhangmo/LearnOpenGLCN/Chapter/02_05tech.cpp -o CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.s
 
 # Object files for target OpenGL
 OpenGL_OBJECTS = \
 "CMakeFiles/OpenGL.dir/src/glad.c.o" \
-"CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o"
+"CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.o"
 
 # External object files for target OpenGL
 OpenGL_EXTERNAL_OBJECTS =
 
 OpenGL: CMakeFiles/OpenGL.dir/src/glad.c.o
-OpenGL: CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o
+OpenGL: CMakeFiles/OpenGL.dir/Chapter/02_05tech.cpp.o
 OpenGL: CMakeFiles/OpenGL.dir/build.make
 OpenGL: /usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.dylib
 OpenGL: /usr/local/Cellar/glfw/3.3/lib/libglfw.3.dylib
