@@ -7,14 +7,14 @@
 #include <iostream>
 #include <filesystem>
 
-#include "../glm/glm.hpp"
-#include "../glm/gtc/matrix_transform.hpp"
-#include "../glm/gtc/type_ptr.hpp"
+#include "../../glm/glm.hpp"
+#include "../../glm/gtc/matrix_transform.hpp"
+#include "../../glm/gtc/type_ptr.hpp"
 
-#include "../Header/LocalHeader/shader.h"
-#include "../Header/LocalHeader/stb_image.h"
-#include "../Header/LocalHeader/Camera.h"
-#include "../Header/LocalHeader/filesystem.h"
+#include "../../Header/LocalHeader/shader.h"
+#include "../../Header/LocalHeader/stb_image.h"
+#include "../../Header/LocalHeader/Camera.h"
+#include "../../Header/LocalHeader/filesystem.h"
 
 using namespace std;
 
@@ -74,8 +74,8 @@ int main(void)
 
     glEnable(GL_DEPTH_TEST);
 
-    Shader lightingShader("../Shader/0204/LightVertex.glsl","../Shader/0204/LightFragment.glsl");
-    Shader lampShader("../Shader/0204/Vertex.glsl","../Shader/0204/Fragment.glsl");
+    Shader lightingShader("../Shader/0205/LightVertex.glsl","../Shader/0205/LightFragment.glsl");
+    Shader lampShader("../Shader/0205/Vertex.glsl","../Shader/0205/Fragment.glsl");
 
     float vertices[] = {
             // positions          // normals           // texture coords
@@ -157,10 +157,14 @@ int main(void)
 
     int width,height,nrChannels;
 
-    unsigned int diffuseMap = loadTexture(FileSystem::getPath("../Texture/container2.png").c_str());
+    unsigned int diffuseMap = loadTexture(FileSystem::getPath("Texture/container2.png").c_str());
 
     lightingShader.use();
     lightingShader.setInt("material.diffuse",0);
+
+    unsigned int specularMap = loadTexture(FileSystem::getPath("Texture/container2_specular.png").c_str());
+    lightingShader.use();
+    lightingShader.setInt("material.specular",1);
 
     while(!glfwWindowShouldClose(window))
     {
@@ -196,6 +200,9 @@ int main(void)
 
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D,diffuseMap);
+
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D,specularMap);
 
         glBindVertexArray(cubeVAO);
         glDrawArrays(GL_TRIANGLES,0,36);

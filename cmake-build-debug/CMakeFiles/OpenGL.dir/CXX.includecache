@@ -6,27 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhangmo/LearnOpenGLCN/Chapter/02_05tech.cpp
+/Users/zhangmo/LearnOpenGLCN/Chapter/02/02_06.cpp
 glad.h
 -
 glfw3.h
 -
-../glm/glm.hpp
-/Users/zhangmo/LearnOpenGLCN/glm/glm.hpp
-../glm/gtc/matrix_transform.hpp
-/Users/zhangmo/LearnOpenGLCN/glm/gtc/matrix_transform.hpp
-../glm/gtc/type_ptr.hpp
-/Users/zhangmo/LearnOpenGLCN/glm/gtc/type_ptr.hpp
-../Header/LocalHeader/shader.h
-/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/shader.h
-../Header/LocalHeader/stb_image.h
-/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/stb_image.h
-../Header/LocalHeader/Camera.h
-/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/Camera.h
-../Header/LocalHeader/filesystem.h
-/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/filesystem.h
 iostream
 -
+filesystem
+-
+../../glm/glm.hpp
+/Users/zhangmo/LearnOpenGLCN/glm/glm.hpp
+../../glm/gtc/matrix_transform.hpp
+/Users/zhangmo/LearnOpenGLCN/glm/gtc/matrix_transform.hpp
+../../glm/gtc/type_ptr.hpp
+/Users/zhangmo/LearnOpenGLCN/glm/gtc/type_ptr.hpp
+../../Header/LocalHeader/shader.h
+/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/shader.h
+../../Header/LocalHeader/stb_image.h
+/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/stb_image.h
+../../Header/LocalHeader/Camera.h
+/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/Camera.h
+../../Header/LocalHeader/filesystem.h
+/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/filesystem.h
 
 /Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/Camera.h
 glad.h

@@ -1,18 +1,18 @@
 //
-// Created by 王啸川 on 2019/11/28.
+// Created by 王啸川 on 2019/10/8.
 //
 
 #include <glad.h>
 #include <glfw3.h>
 #include <iostream>
 
-#include "../glm/glm.hpp"
-#include "../glm/gtc/matrix_transform.hpp"
-#include "../glm/gtc/type_ptr.hpp"
+#include "../../glm/glm.hpp"
+#include "../../glm/gtc/matrix_transform.hpp"
+#include "../../glm/gtc/type_ptr.hpp"
 
-#include "../Header/LocalHeader/shader.h"
-#include "../Header/LocalHeader/stb_image.h"
-#include "../Header/LocalHeader/Camera.h"
+#include "../../Header/LocalHeader/shader.h"
+#include "../../Header/LocalHeader/stb_image.h"
+#include "../../Header/LocalHeader/Camera.h"
 
 using namespace std;
 
@@ -70,8 +70,8 @@ int main(void)
 
     glEnable(GL_DEPTH_TEST);
 
-    Shader lightingShader("../Shader/0204/LightVertex.glsl","../Shader/0204/LightFragment.glsl");
-    Shader lampShader("../Shader/0204/Vertex.glsl","../Shader/0204/Fragment.glsl");
+    Shader lightingShader("../Shader/0202LightVertex.glsl","../Shader/0202LightFragment.glsl");
+    Shader lampShader("../Shader/0202Vertex.glsl","../Shader/0202Fragment.glsl");
 
     float vertices[] = {
             -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
@@ -163,16 +163,6 @@ int main(void)
         lightingShader.setVec3("objectColor",1.0f,0.5f,0.31f);
         lightingShader.setVec3("lightColor",1.0f,1.0f,1.0f);
         lightingShader.setVec3("lightPos",lightPos);
-        lightingShader.setVec3("viewPos",camera.Position);
-
-        lightingShader.setVec3("material.ambient",1.0f,0.5f,0.31f);
-        lightingShader.setVec3("material.diffuse",1.0f,0.5f,0.31f);
-        lightingShader.setVec3("material.specular",0.5f,0.5f,0.5f);
-        lightingShader.setFloat("material.shininess",32.0f);
-
-        lightingShader.setVec3("light.ambient",0.2f,0.2f,0.2f);
-        lightingShader.setVec3("light.diffuse",0.5f,0.5f,0.5f);
-        lightingShader.setVec3("light.specular",1.0f,1.0f,1.0f);
 
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();
@@ -195,6 +185,7 @@ int main(void)
 
         glBindVertexArray(lightVAO);
         glDrawArrays(GL_TRIANGLES,0,36);
+
 
         // 检查并调用事件，交换缓冲
         glfwSwapBuffers(window);

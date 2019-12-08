@@ -1,8 +1,4 @@
 //
-// Created by 王啸川 on 2019/10/5.
-//
-
-//
 // Created by 王啸川 on 2019/10/3.
 //
 
@@ -10,8 +6,13 @@
 #include <glfw3.h>
 #include <iostream>
 
-#include "../Header/LocalHeader/shader.h"
-#include "../Header/LocalHeader/stb_image.h"
+#include "../../Header/LocalHeader/shader.h"
+#include "../../Header/LocalHeader/stb_image.h"
+
+#include "../../glm/glm.hpp"
+#include "../../glm/gtc/matrix_transform.hpp"
+#include "../../glm/gtc/type_ptr.hpp"
+
 using namespace std;
 
 void framebuffer_size_callback(GLFWwindow* window,int width,int height);
@@ -62,11 +63,11 @@ int main(void)
 
 
     float vertices[] = {
-            // 位置              // 颜色
-            0.5f,0.5f,0.0f,    1.0f,0.0f,0.0f,     1.0f,1.0f,
-            0.5f,-0.5f,0.0f,   0.0f,1.0f,0.0f,     1.0f,0.0f,
-            -0.5f,-0.5f,0.0f,  0.0f,0.0f,1.0f,     0.0f,0.0f,
-            -0.5f,0.5f,0.0f,   1.0f,1.0f,0.0f,     0.0f,1.0f,
+            // 位置             // 纹理
+            0.5f,0.5f,0.0f,    1.0f,1.0f,
+            0.5f,-0.5f,0.0f,   1.0f,0.0f,
+            -0.5f,-0.5f,0.0f,  0.0f,0.0f,
+            -0.5f,0.5f,0.0f,   0.0f,1.0f,
     };
 
     unsigned int indices[] = {
@@ -96,14 +97,14 @@ int main(void)
 
 
     // 解析顶点数据，并启用顶点数据，设置顶点属性指针
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,8*sizeof(float),(void*)(3* sizeof(float)));
+    glVertexAttribPointer(1,2,GL_FLOAT,GL_FALSE,5*sizeof(float),(void*)(3* sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    glVertexAttribPointer(2,2,GL_FLOAT,GL_FALSE,8*sizeof(float),(void*)(6* sizeof(float)));
-    glEnableVertexAttribArray(2);
+    //glVertexAttribPointer(2,2,GL_FLOAT,GL_FALSE,8*sizeof(float),(void*)(6* sizeof(float)));
+    //glEnableVertexAttribArray(2);
 
     unsigned int texture1,texture2;
     glGenTextures(1,&texture1);
@@ -161,12 +162,14 @@ int main(void)
 
     ourShader.use(); // don't forget to activate/use the shader before setting uniforms!
     // either set it manually like so:
-    glUniform1i(glGetUniformLocation(ourShader.ID, "texture1"), 0);
-    // or set it via the texture class
+    ourShader.setInt("texture1", 0);
     ourShader.setInt("texture2", 1);
 
     // 线框模式
     //glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
+
+    //glm::vec4 vec(1.0f,0.0f,0.0f,1.0f);
+
 
     while(!glfwWindowShouldClose(window))
     {
@@ -182,7 +185,16 @@ int main(void)
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D,texture2);
 
+        glm::mat4 trans = glm::mat4(1.0f);;
+        //trans = glm::rotate(trans,glm::radians(90.0f),glm::vec3(0.0,0.0,1.0));
+        //trans = glm::scale(trans,glm::vec3(0.5,0.5,0.5));
+        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+
         ourShader.use();
+        unsigned int transformLoc = glGetUniformLocation(ourShader.ID,"transform");
+        glUniformMatrix4fv(transformLoc,1,GL_FALSE,glm::value_ptr(trans));
+
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         //glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,0);

@@ -16,7 +16,7 @@ link_libraries(${OPENGL} ${GLEW_LINK} ${GLFW_LINK})
 
 # 执行编译命令
 # 这个glad.c在第2步中说过要拉到项目中，注意路径
-set(SOURCE_FILES "src/glad.c" Chapter/02_05tech.cpp)
+set(SOURCE_FILES "src/glad.c" Chapter/02/02_06.cpp)
 
 add_executable(OpenGL ${SOURCE_FILES})
 

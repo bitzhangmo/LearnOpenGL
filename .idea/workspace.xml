@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="OpenGL" targetName="OpenGL" />
-      <config projectName="OpenGL" targetName="ImGUI" />
       <config projectName="OpenGL" targetName="LOCALHEADER" />
+      <config projectName="OpenGL" targetName="ImGUI" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,18 +14,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter/02_05.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter/02_05tech.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/filesystem.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0205/Fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0205/LightFragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0205/LightVertex.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0205/Vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/02/02_06.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0206/Fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0206/LightFragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0206/LightVertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0206/Vertex.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_04.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02_04.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/02_01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/02_02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_02.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/02_03.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_03.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/02_04.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_04.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/02_05.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_05.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/02_05tech.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/05.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/05.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/06.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/06.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/07.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/07.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/08.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/08.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/09.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/09.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0205/LightFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0205/LightFragment.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02_04.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" afterDir="false" />
@@ -36,7 +45,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,35 +80,24 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shader/0205" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shader" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Shader/0205" />
-      <recent name="$PROJECT_DIR$/Chapter" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter/02" />
+      <recent name="$PROJECT_DIR$/Chapter/01" />
       <recent name="$PROJECT_DIR$/Header/LocalHeader" />
       <recent name="$PROJECT_DIR$/Header" />
       <recent name="$PROJECT_DIR$/Header/imgui" />
-      <recent name="$PROJECT_DIR$/Shader/0202" />
-      <recent name="$PROJECT_DIR$/Shader/0201" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shader" />
+      <recent name="$PROJECT_DIR$/Shader/0205" />
+      <recent name="$PROJECT_DIR$/Chapter" />
+    </key>
   </component>
   <component name="RunManager" selected="CMake Application.OpenGL">
     <configuration name="ImGUI" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenGL" TARGET_NAME="ImGUI" CONFIG_NAME="Debug">
@@ -123,6 +120,18 @@
       <item itemvalue="CMake Application.ImGUI" />
       <item itemvalue="CMake Application.LOCALHEADER" />
     </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -165,7 +174,10 @@
       <workItem from="1575264081233" duration="6617000" />
       <workItem from="1575554828269" duration="5872000" />
       <workItem from="1575700981385" duration="400000" />
-      <workItem from="1575701388149" duration="1359000" />
+      <workItem from="1575701388149" duration="1788000" />
+      <workItem from="1575790140026" duration="1014000" />
+      <workItem from="1575791466270" duration="98000" />
+      <workItem from="1575791575361" duration="1090000" />
     </task>
     <servers />
   </component>
@@ -189,29 +201,35 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="48" key="GridCell.Tab.0.bottom" timestamp="1570527039389">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="57" key="GridCell.Tab.0.bottom" timestamp="1575811838728">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575811838728" />
     <state width="1358" height="48" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1570527039389" />
-    <state width="1358" height="48" key="GridCell.Tab.0.center" timestamp="1570527039387">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="57" key="GridCell.Tab.0.center" timestamp="1575811838727">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="57" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575811838727" />
     <state width="1358" height="48" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1570527039387" />
-    <state width="1358" height="48" key="GridCell.Tab.0.left" timestamp="1570527039386">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="57" key="GridCell.Tab.0.left" timestamp="1575811838726">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="57" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575811838726" />
     <state width="1358" height="48" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1570527039386" />
-    <state width="1358" height="48" key="GridCell.Tab.0.right" timestamp="1570527039388">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="57" key="GridCell.Tab.0.right" timestamp="1575811838728">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="57" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575811838728" />
     <state width="1358" height="48" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1570527039388" />
-    <state x="205" y="100" key="SettingsEditor" timestamp="1570526816582">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="205" y="79" key="SettingsEditor" timestamp="1575791565133">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="205" y="79" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575791565133" />
     <state x="205" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1570526816582" />
-    <state x="390" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1570526234666">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="390" y="278" key="com.intellij.ide.util.TipDialog" timestamp="1575791580219">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="390" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1570526234666" />
+    <state x="390" y="278" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575791580219" />
+    <state x="390" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1575791468479" />
   </component>
 </project>

@@ -6,13 +6,13 @@
 #include <glfw3.h>
 #include <iostream>
 
-#include "../glm/glm.hpp"
-#include "../glm/gtc/matrix_transform.hpp"
-#include "../glm/gtc/type_ptr.hpp"
+#include "../../glm/glm.hpp"
+#include "../../glm/gtc/matrix_transform.hpp"
+#include "../../glm/gtc/type_ptr.hpp"
 
-#include "../Header/LocalHeader/shader.h"
-#include "../Header/LocalHeader/stb_image.h"
-#include "../Header/LocalHeader/Camera.h"
+#include "../../Header/LocalHeader/shader.h"
+#include "../../Header/LocalHeader/stb_image.h"
+#include "../../Header/LocalHeader/Camera.h"
 
 using namespace std;
 
