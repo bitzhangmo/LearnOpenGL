@@ -11,16 +11,18 @@ struct Material {
 
 struct Light {
 
-    vec3 position;
-    //vec3 direction;
+    vec3 position;      // 光源位置
+    vec3 direction;     // 光线方向
+    float cutOff;       // 切光角
+    float outerCutOff;
 
-    vec3 ambient;
-    vec3 diffuse;
-    vec3 specular;
+    vec3 ambient;       // 环境光
+    vec3 diffuse;       // 漫反射
+    vec3 specular;      // 镜面光
 
-    float constant;
-    float linear;
-    float quadratic;
+    float constant;     // 光线衰减常数项
+    float linear;       // 光线衰减线性项
+    float quadratic;    // 光线衰减二次项
 };
 
 
@@ -34,30 +36,41 @@ uniform vec3 viewPos;
 
 void main() {
 
-    // 环境光
-    vec3 ambient = light.ambient * vec3(texture(material.diffuse,TexCoords));
-
-    // 漫反射
-    vec3 norm = normalize(Normal);
     vec3 lightDir = normalize(light.position - FragPos);
-    float diff = max(dot(norm,lightDir),0.0f);
-    vec3 diffuse = (diff * light.diffuse) * vec3(texture(material.diffuse,TexCoords));
+    float theta =  dot(lightDir,normalize(-light.direction));
 
-    //float specularStrength = 0.5f;
+    if(theta > light.cutOff)
+    {
+        // 环境光
+        vec3 ambient = light.ambient * vec3(texture(material.diffuse,TexCoords));
 
-    // 镜面光
-    vec3 viewDir = normalize(viewPos - FragPos);
-    vec3 reflectDir = reflect(-lightDir,norm);
-    float spec = pow(max(dot(viewDir,reflectDir),0.0),material.shininess);
-    vec3 specular = vec3(texture(material.specular,TexCoords)) * spec * light.specular;
+        // 漫反射
+        vec3 norm = normalize(Normal);
+        vec3 lightDir = normalize(light.position - FragPos);
+        float diff = max(dot(norm,lightDir),0.0f);
+        vec3 diffuse = (diff * light.diffuse) * vec3(texture(material.diffuse,TexCoords));
 
-    float distance = length(light.position - FragPos);
-    float attenuation = 1.0f / (light.constant + light.linear * distance + light.quadratic * (distance * distance));
+        //float specularStrength = 0.5f;
 
-    ambient *= attenuation;
-    diffuse *= attenuation;
-    specular *= attenuation;
+        // 镜面光
+        vec3 viewDir = normalize(viewPos - FragPos);
+        vec3 reflectDir = reflect(-lightDir,norm);
+        float spec = pow(max(dot(viewDir,reflectDir),0.0),material.shininess);
+        vec3 specular = vec3(texture(material.specular,TexCoords)) * spec * light.specular;
 
-    vec3 result = (ambient + diffuse + specular);
-    FragColor = vec4(result,1.0);
+        float distance = length(light.position - FragPos);
+        float attenuation = 1.0f / (light.constant + light.linear * distance + light.quadratic * (distance * distance));
+
+        //ambient *= attenuation;
+        diffuse *= attenuation;
+        specular *= attenuation;
+
+        vec3 result = (ambient + diffuse + specular);
+        FragColor = vec4(result,1.0);
+    }
+    else
+    {
+        FragColor = vec4(light.ambient * vec3(texture(material.specular,TexCoords)),1.0);
+    }
+
 }

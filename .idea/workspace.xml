@@ -16,7 +16,6 @@
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter/02/02_06.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_06.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shader/0206/Fragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0206/Fragment.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shader/0206/LightFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0206/LightFragment.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02/02_06.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02/02_06.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL" afterDir="false" />
@@ -153,7 +152,7 @@
       <workItem from="1575701388149" duration="1788000" />
       <workItem from="1575790140026" duration="1014000" />
       <workItem from="1575791466270" duration="98000" />
-      <workItem from="1575791575361" duration="3442000" />
+      <workItem from="1575791575361" duration="5412000" />
     </task>
     <servers />
   </component>
@@ -177,25 +176,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="57" key="GridCell.Tab.0.bottom" timestamp="1575902016091">
+    <state width="1398" height="57" key="GridCell.Tab.0.bottom" timestamp="1575905763867">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575902016091" />
+    <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575905763867" />
     <state width="1358" height="48" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1570527039389" />
-    <state width="1398" height="57" key="GridCell.Tab.0.center" timestamp="1575902016090">
+    <state width="1398" height="57" key="GridCell.Tab.0.center" timestamp="1575905763866">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575902016090" />
+    <state width="1398" height="57" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575905763866" />
     <state width="1358" height="48" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1570527039387" />
-    <state width="1398" height="57" key="GridCell.Tab.0.left" timestamp="1575902016090">
+    <state width="1398" height="57" key="GridCell.Tab.0.left" timestamp="1575905763865">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575902016090" />
+    <state width="1398" height="57" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575905763865" />
     <state width="1358" height="48" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1570527039386" />
-    <state width="1398" height="57" key="GridCell.Tab.0.right" timestamp="1575902016091">
+    <state width="1398" height="57" key="GridCell.Tab.0.right" timestamp="1575905763867">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575902016091" />
+    <state width="1398" height="57" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575905763867" />
     <state width="1358" height="48" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1570527039388" />
     <state x="205" y="79" key="SettingsEditor" timestamp="1575791565133">
       <screen x="0" y="0" width="1440" height="900" />

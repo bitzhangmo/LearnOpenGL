@@ -187,7 +187,9 @@ int main(void)
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         lightingShader.use();
-        lightingShader.setVec3("light.position",lightPos);
+        lightingShader.setVec3("light.position",camera.Position);
+        lightingShader.setVec3("light.direction",camera.Front);
+        lightingShader.setFloat("light.cutOff",glm::cos(glm::radians(12.5f)));  // radians把角度转换为弧度
         lightingShader.setVec3("viewPos",camera.Position);
 
         lightingShader.setVec3("light.ambient",0.2f,0.2f,0.2f);
