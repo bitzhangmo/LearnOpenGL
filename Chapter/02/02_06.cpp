@@ -146,7 +146,6 @@ int main(void)
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices),vertices,GL_STATIC_DRAW);
 
     glBindVertexArray(cubeVAO);
-
     // position Attribute
     glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,8*(sizeof(float)),(void*)0);
     glEnableVertexAttribArray(0);
@@ -162,21 +161,16 @@ int main(void)
     glBindVertexArray(lightVAO);
 
     glBindBuffer(GL_ARRAY_BUFFER,VBO);
-
     glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,8*(sizeof(float)),(void*)0);
     glEnableVertexAttribArray(0);
 
-    stbi_set_flip_vertically_on_load(true);
-
-    int width,height,nrChannels;
+    //stbi_set_flip_vertically_on_load(true);
 
     unsigned int diffuseMap = loadTexture(FileSystem::getPath("Texture/container2.png").c_str());
+    unsigned int specularMap = loadTexture(FileSystem::getPath("Texture/container2_specular.png").c_str());
 
     lightingShader.use();
     lightingShader.setInt("material.diffuse",0);
-
-    unsigned int specularMap = loadTexture(FileSystem::getPath("Texture/container2_specular.png").c_str());
-    lightingShader.use();
     lightingShader.setInt("material.specular",1);
 
     while(!glfwWindowShouldClose(window))
@@ -189,7 +183,7 @@ int main(void)
         processInput(window);
 
         // 渲染指令
-        glClearColor(0.1f,0.1f,0.1f,0.1f);
+        glClearColor(0.1f,0.1f,0.1f,1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         lightingShader.use();
@@ -199,9 +193,11 @@ int main(void)
         lightingShader.setVec3("light.ambient",0.2f,0.2f,0.2f);
         lightingShader.setVec3("light.diffuse",0.5f,0.5f,0.5f);
         lightingShader.setVec3("light.specular",1.0f,1.0f,1.0f);
+        lightingShader.setFloat("light.constant",1.0f);
+        lightingShader.setFloat("light.linear",0.09f);
+        lightingShader.setFloat("light.quadratic",0.032f);
 
-        lightingShader.setVec3("material.specular",0.5f,0.5f,0.5f);
-        lightingShader.setFloat("material.shininess",64.0f);
+        lightingShader.setFloat("material.shininess",32.0f);
 
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();
@@ -210,7 +206,7 @@ int main(void)
 
         glm::mat4 model = glm::mat4(1.0f);
         lightingShader.setMat4("model",model);
-        lightingShader.setVec3("light.direction",-0.2f,-1.0f,-0.3f);
+
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D,diffuseMap);
 
@@ -218,19 +214,10 @@ int main(void)
         glBindTexture(GL_TEXTURE_2D,specularMap);
 
         glBindVertexArray(cubeVAO);
-        glDrawArrays(GL_TRIANGLES,0,36);
-
-        //lampShader.use();
-        //lampShader.setMat4("projection",projection);
-        //lampShader.setMat4("view",view);
-        //model = glm::mat4(1.0f);
-        //model = glm::translate(model,lightPos);
-        //model = glm::scale(model,glm::vec3(0.2f));
-        //lampShader.setMat4("model",model);
 
         for(unsigned int i = 0;i < 10; i++)
         {
-            glm::mat4 model;
+            glm::mat4 model = glm::mat4(1.0f);
             model = glm::translate(model,cubePositions[i]);
             float angle = 20.0f * i;
             model = glm::rotate(model,glm::radians(angle),glm::vec3(1.0f,0.3f,0.5f));
@@ -239,8 +226,16 @@ int main(void)
             glDrawArrays(GL_TRIANGLES,0,36);
         }
 
-        //glBindVertexArray(lightVAO);
-        //glDrawArrays(GL_TRIANGLES,0,36);
+        lampShader.use();
+        lampShader.setMat4("projection",projection);
+        lampShader.setMat4("view",view);
+        model = glm::mat4(1.0f);
+        model = glm::translate(model,lightPos);
+        model = glm::scale(model,glm::vec3(0.2f));
+        lampShader.setMat4("model",model);
+
+        glBindVertexArray(lightVAO);
+        glDrawArrays(GL_TRIANGLES,0,36);
 
         // 检查并调用事件，交换缓冲
         glfwSwapBuffers(window);

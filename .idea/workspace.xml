@@ -14,36 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter/02/02_06.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0206/Fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0206/LightFragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0206/LightVertex.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0206/Vertex.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_01.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_02.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_03.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_03.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_04.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_04.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_05.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_05.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02_05tech.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/05.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/05.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/06.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/06.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/07.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/07.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/08.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/08.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/09.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/09.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/01/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shader/0205/LightFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0205/LightFragment.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/02/02_06.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_06.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0206/Fragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0206/Fragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0206/LightFragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/0206/LightFragment.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02/02_06.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/02/02_06.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +153,7 @@
       <workItem from="1575701388149" duration="1788000" />
       <workItem from="1575790140026" duration="1014000" />
       <workItem from="1575791466270" duration="98000" />
-      <workItem from="1575791575361" duration="1090000" />
+      <workItem from="1575791575361" duration="3442000" />
     </task>
     <servers />
   </component>
@@ -201,25 +177,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="57" key="GridCell.Tab.0.bottom" timestamp="1575811838728">
+    <state width="1398" height="57" key="GridCell.Tab.0.bottom" timestamp="1575902016091">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575811838728" />
+    <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575902016091" />
     <state width="1358" height="48" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1570527039389" />
-    <state width="1398" height="57" key="GridCell.Tab.0.center" timestamp="1575811838727">
+    <state width="1398" height="57" key="GridCell.Tab.0.center" timestamp="1575902016090">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575811838727" />
+    <state width="1398" height="57" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575902016090" />
     <state width="1358" height="48" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1570527039387" />
-    <state width="1398" height="57" key="GridCell.Tab.0.left" timestamp="1575811838726">
+    <state width="1398" height="57" key="GridCell.Tab.0.left" timestamp="1575902016090">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575811838726" />
+    <state width="1398" height="57" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575902016090" />
     <state width="1358" height="48" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1570527039386" />
-    <state width="1398" height="57" key="GridCell.Tab.0.right" timestamp="1575811838728">
+    <state width="1398" height="57" key="GridCell.Tab.0.right" timestamp="1575902016091">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575811838728" />
+    <state width="1398" height="57" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575902016091" />
     <state width="1358" height="48" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1570527039388" />
     <state x="205" y="79" key="SettingsEditor" timestamp="1575791565133">
       <screen x="0" y="0" width="1440" height="900" />
