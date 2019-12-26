@@ -188,9 +188,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/02/02_06.cpp">
-			<Option target="OpenGL"/>
-		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/03/03_01.cpp">
 			<Option target="OpenGL"/>
 		</Unit>

@@ -10,9 +10,10 @@
 #include "../../glm/gtc/type_ptr.hpp"
 
 #include "../../Header/LocalHeader/shader.h"
-#include "../../Header/LocalHeader/stb_image.h"
+//#include "../../Header/LocalHeader/stb_image.h"
 #include "../../Header/LocalHeader/Camera.h"
 #include "../../Header/LocalHeader/filesystem.h"
+#include "../../Header/LocalHeader/Model.h"
 
 
 using namespace std;
@@ -73,104 +74,9 @@ int main(void)
 
     glEnable(GL_DEPTH_TEST);
 
-    Shader lightingShader("../Shader/0206/LightVertex.glsl","../Shader/0206/LightFragment.glsl");
-    Shader lampShader("../Shader/0206/Vertex.glsl","../Shader/0206/Fragment.glsl");
+    Shader ourShader("../Shader/0302/model_loading_vertex.glsl","../Shader/0302/model_loading_fragment.glsl");
 
-    float vertices[] = {
-            // positions          // normals           // texture coords
-            -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
-            0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 0.0f,
-            0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
-            0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
-            -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 1.0f,
-            -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
-
-            -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 0.0f,
-            0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 0.0f,
-            0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 1.0f,
-            0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   1.0f, 1.0f,
-            -0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 1.0f,
-            -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,   0.0f, 0.0f,
-
-            -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
-            -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
-            -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
-            -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
-            -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
-            -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
-
-            0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
-            0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
-            0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
-            0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
-            0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
-            0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
-
-            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
-            0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f,
-            0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
-            0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
-            -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 0.0f,
-            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
-
-            -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f,
-            0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f,
-            0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
-            0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
-            -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 0.0f,
-            -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f
-    };
-
-    glm::vec3 cubePositions[] = {
-            glm::vec3( 0.0f,  0.0f,  0.0f),
-            glm::vec3( 2.0f,  5.0f, -15.0f),
-            glm::vec3(-1.5f, -2.2f, -2.5f),
-            glm::vec3(-3.8f, -2.0f, -12.3f),
-            glm::vec3( 2.4f, -0.4f, -3.5f),
-            glm::vec3(-1.7f,  3.0f, -7.5f),
-            glm::vec3( 1.3f, -2.0f, -2.5f),
-            glm::vec3( 1.5f,  2.0f, -2.5f),
-            glm::vec3( 1.5f,  0.2f, -1.5f),
-            glm::vec3(-1.3f,  1.0f, -1.5f)
-    };
-
-    // VBO,Vertex Buffer Objects,顶点缓冲对象
-    // VAO,Vertex Array Object,顶点数组对象
-    // EBO,Element Buffer Object,索引缓冲对象
-    unsigned int VBO,cubeVAO;
-    glGenVertexArrays(1,&cubeVAO);
-    glGenBuffers(1,&VBO);
-
-    glBindBuffer(GL_ARRAY_BUFFER,VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices),vertices,GL_STATIC_DRAW);
-
-    glBindVertexArray(cubeVAO);
-    // position Attribute
-    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,8*(sizeof(float)),(void*)0);
-    glEnableVertexAttribArray(0);
-    // normal Attribute
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-    // texcoords Attribute
-    glVertexAttribPointer(2,2,GL_FLOAT,GL_FALSE,8* sizeof(float),(void*)(6* sizeof(float)));
-    glEnableVertexAttribArray(2);
-
-    unsigned int lightVAO;
-    glGenVertexArrays(1,&lightVAO);
-    glBindVertexArray(lightVAO);
-
-    glBindBuffer(GL_ARRAY_BUFFER,VBO);
-    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,8*(sizeof(float)),(void*)0);
-    glEnableVertexAttribArray(0);
-
-    //stbi_set_flip_vertically_on_load(true);
-
-    unsigned int diffuseMap = loadTexture(FileSystem::getPath("Texture/container2.png").c_str());
-    unsigned int specularMap = loadTexture(FileSystem::getPath("Texture/container2_specular.png").c_str());
-
-    lightingShader.use();
-    lightingShader.setInt("material.diffuse",0);
-    lightingShader.setInt("material.specular",1);
+    Model ourModel(FileSystem::getPath("nanosuit/nanosuit.obj").c_str());
 
     while(!glfwWindowShouldClose(window))
     {
@@ -182,71 +88,26 @@ int main(void)
         processInput(window);
 
         // 渲染指令
-        glClearColor(0.1f,0.1f,0.1f,1.0f);
+        glClearColor(0.05f,0.05f,0.05f,1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        lightingShader.use();
-        lightingShader.setVec3("light.position",camera.Position);
-        lightingShader.setVec3("light.direction",camera.Front);
-        lightingShader.setFloat("light.cutOff",glm::cos(glm::radians(12.5f)));  // radians把角度转换为弧度
-        lightingShader.setFloat("light.outerCutOff",glm::cos(glm::radians(17.5f)));
-        lightingShader.setVec3("viewPos",camera.Position);
-
-        lightingShader.setVec3("light.ambient",0.2f,0.2f,0.2f);
-        lightingShader.setVec3("light.diffuse",0.5f,0.5f,0.5f);
-        lightingShader.setVec3("light.specular",1.0f,1.0f,1.0f);
-        lightingShader.setFloat("light.constant",1.0f);
-        lightingShader.setFloat("light.linear",0.09f);
-        lightingShader.setFloat("light.quadratic",0.032f);
-
-        lightingShader.setFloat("material.shininess",32.0f);
+        ourShader.use();
 
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();
-        lightingShader.setMat4("projection", projection);
-        lightingShader.setMat4("view",view);
+        ourShader.setMat4("projection", projection);
+        ourShader.setMat4("view",view);
 
         glm::mat4 model = glm::mat4(1.0f);
-        lightingShader.setMat4("model",model);
-
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D,diffuseMap);
-
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D,specularMap);
-
-        glBindVertexArray(cubeVAO);
-
-        for(unsigned int i = 0;i < 10; i++)
-        {
-            glm::mat4 model = glm::mat4(1.0f);
-            model = glm::translate(model,cubePositions[i]);
-            float angle = 20.0f * i;
-            model = glm::rotate(model,glm::radians(angle),glm::vec3(1.0f,0.3f,0.5f));
-            lightingShader.setMat4("model",model);
-
-            glDrawArrays(GL_TRIANGLES,0,36);
-        }
-
-        lampShader.use();
-        lampShader.setMat4("projection",projection);
-        lampShader.setMat4("view",view);
-        model = glm::mat4(1.0f);
-        model = glm::translate(model,lightPos);
-        model = glm::scale(model,glm::vec3(0.2f));
-        lampShader.setMat4("model",model);
-
-        glBindVertexArray(lightVAO);
-        glDrawArrays(GL_TRIANGLES,0,36);
+        model = glm::translate(model,glm::vec3(0.0f,-1.75f,0.0f));
+        model = glm::scale(model,glm::vec3(0.2f,0.2f,0.2f));
+        ourShader.setMat4("model",model);
+        ourModel.Draw(ourShader);
 
         // 检查并调用事件，交换缓冲
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
-
-    glDeleteVertexArrays(1, &cubeVAO);
-    glDeleteVertexArrays(1, &lightVAO);
-    glDeleteBuffers(1, &VBO);
 
     glfwTerminate();
     return 0;

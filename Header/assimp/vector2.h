@@ -38,67 +38,76 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ---------------------------------------------------------------------------
 */
-/** @file aiColor4D.h
- *  @brief RGBA color structure, including operators when compiling in C++
+/** @file aiVector2t.h
+ *  @brief 2D vector structure, including operators when compiling in C++
  */
-#ifndef AI_COLOR4D_H_INC
-#define AI_COLOR4D_H_INC
-
-#include "./Compiler/pushpack1.h"
+#ifndef AI_VECTOR2D_H_INC
+#define AI_VECTOR2D_H_INC
 
 #ifdef __cplusplus
+#   include <cmath>
+#else
+#   include <math.h>
+#endif
+
+#include "pushpack1.h"
 
 // ----------------------------------------------------------------------------------
-/** Represents a color in Red-Green-Blue space including an 
-*   alpha component. Color values range from 0 to 1. */
-// ----------------------------------------------------------------------------------
+/** Represents a two-dimensional vector. 
+ */
+
+#ifdef __cplusplus
 template <typename TReal>
-class aiColor4t
+class aiVector2t
 {
 public:
-	aiColor4t () : r(), g(), b(), a() {}
-	aiColor4t (TReal _r, TReal _g, TReal _b, TReal _a) 
-		: r(_r), g(_g), b(_b), a(_a) {}
-	aiColor4t (TReal _r) : r(_r), g(_r), b(_r), a(_r) {}
-	aiColor4t (const aiColor4t& o) 
-		: r(o.r), g(o.g), b(o.b), a(o.a) {}
 
-public:
-	// combined operators
-	const aiColor4t& operator += (const aiColor4t& o);
-	const aiColor4t& operator -= (const aiColor4t& o);
-	const aiColor4t& operator *= (TReal f);
-	const aiColor4t& operator /= (TReal f);
-
-public:
-	// comparison
-	bool operator == (const aiColor4t& other) const;
-	bool operator != (const aiColor4t& other) const;
-	bool operator <  (const aiColor4t& other) const;
-
-	// color tuple access, rgba order
-	inline TReal operator[](unsigned int i) const;
-	inline TReal& operator[](unsigned int i);
-
-	/** check whether a color is (close to) black */
-	inline bool IsBlack() const;
+	aiVector2t () : x(), y() {}
+	aiVector2t (TReal _x, TReal _y) : x(_x), y(_y) {}
+	explicit aiVector2t (TReal _xyz) : x(_xyz), y(_xyz) {}
+	aiVector2t (const aiVector2t& o) : x(o.x), y(o.y) {}
 
 public:
 
-	// Red, green, blue and alpha color values 
-	TReal r, g, b, a;
-} PACK_STRUCT;  // !struct aiColor4D
+	void Set( TReal pX, TReal pY);
+	TReal SquareLength() const ;
+	TReal Length() const ;
+	aiVector2t& Normalize();
 
-typedef aiColor4t<float> aiColor4D;
+public:
+
+	const aiVector2t& operator += (const aiVector2t& o);
+	const aiVector2t& operator -= (const aiVector2t& o);
+	const aiVector2t& operator *= (TReal f);
+	const aiVector2t& operator /= (TReal f);
+
+	TReal operator[](unsigned int i) const;
+	TReal& operator[](unsigned int i);
+
+	bool operator== (const aiVector2t& other) const;
+	bool operator!= (const aiVector2t& other) const;
+
+	bool Equal(const aiVector2t& other, TReal epsilon = 1e-6) const;
+
+	aiVector2t& operator= (TReal f);
+	const aiVector2t SymMul(const aiVector2t& o);
+
+	template <typename TOther>
+	operator aiVector2t<TOther> () const;
+
+	TReal x, y;	
+} PACK_STRUCT;
+
+typedef aiVector2t<float> aiVector2D;
 
 #else
 
-struct aiColor4D {
-	float r, g, b, a;
-} PACK_STRUCT;
+struct aiVector2D {
+	float x,y;
+};
 
 #endif // __cplusplus
 
-#include "./Compiler/poppack1.h"
+#include "poppack1.h"
 
-#endif // AI_COLOR4D_H_INC
+#endif // AI_VECTOR2D_H_INC

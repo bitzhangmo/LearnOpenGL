@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/zhangmo/LearnOpenGLCN/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/Header/assimp/CMakeFiles/progress.marks
+	cd /Users/zhangmo/LearnOpenGLCN/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Header/assimp/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/zhangmo/LearnOpenGLCN/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Header/assimp/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,111 +97,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/zhangmo/LearnOpenGLCN/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Header/assimp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/zhangmo/LearnOpenGLCN/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Header/assimp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zhangmo/LearnOpenGLCN/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named OpenGL
-
-# Build rule for target.
-OpenGL: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGL
-.PHONY : OpenGL
-
-# fast build rule for target.
-OpenGL/fast:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/build
-.PHONY : OpenGL/fast
-
-#=============================================================================
-# Target rules for targets named ImGUI
-
-# Build rule for target.
-ImGUI: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ImGUI
-.PHONY : ImGUI
-
-# fast build rule for target.
-ImGUI/fast:
-	$(MAKE) -f Header/imgui/CMakeFiles/ImGUI.dir/build.make Header/imgui/CMakeFiles/ImGUI.dir/build
-.PHONY : ImGUI/fast
-
-#=============================================================================
-# Target rules for targets named LOCALHEADER
-
-# Build rule for target.
-LOCALHEADER: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LOCALHEADER
-.PHONY : LOCALHEADER
-
-# fast build rule for target.
-LOCALHEADER/fast:
-	$(MAKE) -f Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build.make Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build
-.PHONY : LOCALHEADER/fast
-
-Chapter/03/03_01.o: Chapter/03/03_01.cpp.o
-
-.PHONY : Chapter/03/03_01.o
-
-# target to build an object file
-Chapter/03/03_01.cpp.o:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/03/03_01.cpp.o
-.PHONY : Chapter/03/03_01.cpp.o
-
-Chapter/03/03_01.i: Chapter/03/03_01.cpp.i
-
-.PHONY : Chapter/03/03_01.i
-
-# target to preprocess a source file
-Chapter/03/03_01.cpp.i:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/03/03_01.cpp.i
-.PHONY : Chapter/03/03_01.cpp.i
-
-Chapter/03/03_01.s: Chapter/03/03_01.cpp.s
-
-.PHONY : Chapter/03/03_01.s
-
-# target to generate assembly for a file
-Chapter/03/03_01.cpp.s:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/03/03_01.cpp.s
-.PHONY : Chapter/03/03_01.cpp.s
-
-src/glad.o: src/glad.c.o
-
-.PHONY : src/glad.o
-
-# target to build an object file
-src/glad.c.o:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/src/glad.c.o
-.PHONY : src/glad.c.o
-
-src/glad.i: src/glad.c.i
-
-.PHONY : src/glad.i
-
-# target to preprocess a source file
-src/glad.c.i:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/src/glad.c.i
-.PHONY : src/glad.c.i
-
-src/glad.s: src/glad.c.s
-
-.PHONY : src/glad.s
-
-# target to generate assembly for a file
-src/glad.c.s:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/src/glad.c.s
-.PHONY : src/glad.c.s
 
 # Help Target
 help:
@@ -211,15 +118,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... OpenGL"
-	@echo "... ImGUI"
-	@echo "... LOCALHEADER"
-	@echo "... Chapter/03/03_01.o"
-	@echo "... Chapter/03/03_01.i"
-	@echo "... Chapter/03/03_01.s"
-	@echo "... src/glad.o"
-	@echo "... src/glad.i"
-	@echo "... src/glad.s"
 .PHONY : help
 
 
@@ -231,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zhangmo/LearnOpenGLCN/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

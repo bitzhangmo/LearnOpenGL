@@ -45,7 +45,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef AI_MATRIX3x3_H_INC
 #define AI_MATRIX3x3_H_INC
 
-#include "./Compiler/pushpack1.h"
+#include "pushpack1.h"
 
 #ifdef __cplusplus
 
@@ -152,7 +152,7 @@ public:
 	 *  vector called "from" into another vector called "to".
 	 * Input : from[3], to[3] which both must be *normalized* non-zero vectors
 	 * Output: mtx[3][3] -- a 3x3 matrix in colum-major form
-	 * Authors: Tomas Möller, John Hughes
+	 * Authors: Tomas Mï¿½ller, John Hughes
 	 *          "Efficiently Building a Matrix to Rotate One Vector to Another"
 	 *          Journal of Graphics Tools, 4(4):1-4, 1999
 	 */
@@ -180,6 +180,6 @@ struct aiMatrix3x3 {
 
 #endif
 
-#include "./Compiler/poppack1.h"
+#include "poppack1.h"
 
 #endif // AI_MATRIX3x3_H_INC
