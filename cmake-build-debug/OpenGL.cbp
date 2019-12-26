@@ -191,6 +191,15 @@
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/02/02_06.cpp">
 			<Option target="OpenGL"/>
 		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Chapter/03/03_01.cpp">
+			<Option target="OpenGL"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/Model.h">
+			<Option target="LOCALHEADER"/>
+		</Unit>
+		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/mesh.h">
+			<Option target="LOCALHEADER"/>
+		</Unit>
 		<Unit filename="/Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/stb_image_implementation.cpp">
 			<Option target="LOCALHEADER"/>
 		</Unit>

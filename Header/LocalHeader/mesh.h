@@ -8,7 +8,6 @@
 #include <glad.h> // holds all OpenGL type declarations
 
 #include "../../Header/LocalHeader/shader.h"
-
 #include "../../glm/glm.hpp"
 #include "../../glm/gtc/matrix_transform.hpp"
 
@@ -18,17 +17,22 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 struct Vertex
 {
     glm::vec3 Position;
     glm::vec3 Normal;
     glm::vec2 TexCoords;
+    glm::vec3 Tangent;
+    glm::vec3 Bitangent;
 };
 
 struct Texture
 {
     unsigned id;
     string type;
+    string path;
 };
 
 class Mesh {
@@ -37,15 +41,8 @@ public:
     vector<Vertex> vertices;
     vector<unsigned int> indices;
     vector<Texture> textures;
+    unsigned int VAO;
     /* 函数 */
-    Mesh(vector<Vertex> vertices, vector<unsigned int> indices,vector<Texture> textures);
-    void Draw(Shader shader);
-
-private:
-    /* 渲染数据 */
-    unsigned int VAO,VBO,EBO;
-    void setupMesh();
-
     Mesh(vector<Vertex> vertices, vector<unsigned int> indices,vector<Texture> textures)
     {
         this->vertices = vertices;
@@ -54,6 +51,43 @@ private:
 
         setupMesh();
     }
+    void Draw(Shader shader)
+    {
+        unsigned int diffuseNr = 1;
+        unsigned int specularNr = 1;
+        unsigned int normalNr = 1;
+        unsigned int heightNr = 1;
+
+        for(unsigned int i = 0;i < textures.size(),i++)
+        {
+            glActiveTexture(GL_TEXTURE0 + i);
+            // 获取纹理序号，GL_TEXTUREN中的N
+            string number;
+            string name = textures[i].type;
+            if(name == "texture_diffuse")
+                number = std::to_string(diffuseNr++);
+            else if(name == "texture_specular")
+                number = std::to_string(specularNr++);
+            else if(name == "texture_normal")
+                number = std::to_string(normalNr++);
+            else if(name == "texture_height")
+                number = std::to_string(heightNr++);
+
+            glUniform1i(glGetUniformLocation(shader.ID,(name+number).c_str()),i);
+            //shader.setFloat(("material." + name + number).c_str(),i);
+            glBindTexture(GL_TEXTURE_2D,textures[i].id);
+        }
+
+        glBindVertexArray(VAO);
+        glDrawElements(GL_TRIANGLES,indices.size(),GL_UNSIGNED_INT,0);
+        glBindVertexArray(0);
+
+        glActiveTexture(GL_TEXTURE0);
+    }
+
+private:
+    /* 渲染数据 */
+    unsigned int VBO,EBO;
 
     void setupMesh()
     {
@@ -78,34 +112,16 @@ private:
         glEnableVertexAttribArray(2);
         glVertexAttribPointer(2,2,GL_FLOAT,GL_FALSE, sizeof(Vertex),(void*)offsetof(Vertex,TexCoords));
 
+        glEnableVertexAttribArray(3);
+        glVertexAttribPointer(3,3,GL_FLOAT,GL_FALSE, sizeof(Vertex),(void*)offsetof(Vertex,Tangent));
+
+        glEnableVertexAttribArray(4);
+        glVertexAttribPointer(4,3,GL_FLOAT,GL_FALSE, sizeof(Vertex),(void*)offsetof(Vertex,Bitangent));
+
         glBindVertexArray(0);
     }
 
-    void Draw(Shader shader)
-    {
-        unsigned int diffuseNr = 1;
-        unsigned int specularNr = 1;
-        for(unsigned int i = 0;i < textures.size(),i++)
-        {
-            glActiveTexture(GL_TEXTURE0 + i);
-            // 获取纹理序号，GL_TEXTUREN中的N
-            string number;
-            string name = textures[i].type;
-            if(name == "texture_diffuse")
-                number = std::to_string(diffuseNr++);
-            else if(name == "texture_specular")
-                number = std::to_string(specularNr++);
 
-            shader.setFloat(("material." + name + number).c_str(),i);
-            glBindTexture(GL_TEXTURE_2D,textures[i].id);
-        }
-
-        glActiveTexture(GL_TEXTURE0);
-
-        glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES,indices.size(),GL_UNSIGNED_INT,0);
-        glBindVertexArray(0);
-    }
 };
 
 

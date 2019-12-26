@@ -14,11 +14,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/mesh.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/03/03_01.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/Model.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/Compiler/poppack1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/Compiler/pstdint.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/Compiler/pushpack1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/DefaultLogger.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/Exporter.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/IOStream.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/IOSystem.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/Importer.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/LogStream.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/Logger.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/NullLogger.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/ProgressHandler.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/ai_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/anim.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/camera.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/cexport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/cfileio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/cimport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/color4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/color4.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/defs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/importerdesc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/light.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/material.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/material.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/matrix3x3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/matrix3x3.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/matrix4x4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/matrix4x4.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/mesh.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/metadata.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/postprocess.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/quaternion.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/quaternion.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/scene.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/texture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/vector2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/vector2.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/vector3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/vector3.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Header/LocalHeader/assimp/version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/arm_dif.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/arm_showroom_ddn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/arm_showroom_spec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/body_dif.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/body_showroom_ddn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/body_showroom_spec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/glass_ddn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/glass_dif.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/hand_dif.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/hand_showroom_ddn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/hand_showroom_spec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/helmet_diff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/helmet_showroom_ddn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/helmet_showroom_spec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/leg_dif.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/leg_showroom_ddn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/leg_showroom_spec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/nanosuit.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/nanosuit.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nanosuit/nanosuit.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/02/02_06.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/02/02_06.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/mesh.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,21 +142,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shader" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Header/LocalHeader" />
       <recent name="$PROJECT_DIR$/Chapter/02" />
       <recent name="$PROJECT_DIR$/Chapter/01" />
-      <recent name="$PROJECT_DIR$/Header/LocalHeader" />
       <recent name="$PROJECT_DIR$/Header" />
       <recent name="$PROJECT_DIR$/Header/imgui" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Header" />
       <recent name="$PROJECT_DIR$/Shader" />
       <recent name="$PROJECT_DIR$/Shader/0205" />
       <recent name="$PROJECT_DIR$/Chapter" />
@@ -168,7 +245,11 @@
       <workItem from="1575791466270" duration="98000" />
       <workItem from="1575791575361" duration="5494000" />
       <workItem from="1575985698210" duration="2193000" />
-      <workItem from="1576047394366" duration="3169000" />
+      <workItem from="1576047394366" duration="5672000" />
+      <workItem from="1576162902260" duration="198000" />
+      <workItem from="1576163267013" duration="374000" />
+      <workItem from="1577239429190" duration="2315000" />
+      <workItem from="1577242194164" duration="7918000" />
     </task>
     <servers />
   </component>
@@ -192,39 +273,39 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="57" key="GridCell.Tab.0.bottom" timestamp="1576047404826">
+    <state width="1398" height="62" key="GridCell.Tab.0.bottom" timestamp="1577242190756">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576047404826" />
-    <state width="1358" height="48" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1570527039389" />
-    <state width="1398" height="57" key="GridCell.Tab.0.center" timestamp="1576047404825">
+    <state width="1398" height="62" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577242190756" />
+    <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576165643432" />
+    <state width="1398" height="62" key="GridCell.Tab.0.center" timestamp="1577242190754">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576047404825" />
-    <state width="1358" height="48" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1570527039387" />
-    <state width="1398" height="57" key="GridCell.Tab.0.left" timestamp="1576047404825">
+    <state width="1398" height="62" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577242190754" />
+    <state width="1398" height="57" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576165643431" />
+    <state width="1398" height="62" key="GridCell.Tab.0.left" timestamp="1577242190753">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576047404825" />
-    <state width="1358" height="48" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1570527039386" />
-    <state width="1398" height="57" key="GridCell.Tab.0.right" timestamp="1576047404826">
+    <state width="1398" height="62" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577242190753" />
+    <state width="1398" height="57" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576165643431" />
+    <state width="1398" height="62" key="GridCell.Tab.0.right" timestamp="1577242190755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="57" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576047404826" />
-    <state width="1358" height="48" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1570527039388" />
+    <state width="1398" height="62" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577242190755" />
+    <state width="1398" height="57" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576165643432" />
     <state x="205" y="79" key="SettingsEditor" timestamp="1575791565133">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="205" y="79" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575791565133" />
     <state x="205" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1570526816582" />
-    <state x="390" y="278" key="com.intellij.ide.util.TipDialog" timestamp="1575985698662">
+    <state x="390" y="278" key="com.intellij.ide.util.TipDialog" timestamp="1577239430316">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="390" y="278" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575985698662" />
+    <state x="390" y="278" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1577239430316" />
     <state x="390" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1575791468479" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1576050929721">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577328742628">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1576050929721" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577328742628" />
   </component>
 </project>

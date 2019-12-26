@@ -176,6 +176,33 @@ Chapter/02/02_06.cpp.s:
 	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/02/02_06.cpp.s
 .PHONY : Chapter/02/02_06.cpp.s
 
+Chapter/03/03_01.o: Chapter/03/03_01.cpp.o
+
+.PHONY : Chapter/03/03_01.o
+
+# target to build an object file
+Chapter/03/03_01.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/03/03_01.cpp.o
+.PHONY : Chapter/03/03_01.cpp.o
+
+Chapter/03/03_01.i: Chapter/03/03_01.cpp.i
+
+.PHONY : Chapter/03/03_01.i
+
+# target to preprocess a source file
+Chapter/03/03_01.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/03/03_01.cpp.i
+.PHONY : Chapter/03/03_01.cpp.i
+
+Chapter/03/03_01.s: Chapter/03/03_01.cpp.s
+
+.PHONY : Chapter/03/03_01.s
+
+# target to generate assembly for a file
+Chapter/03/03_01.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/03/03_01.cpp.s
+.PHONY : Chapter/03/03_01.cpp.s
+
 src/glad.o: src/glad.c.o
 
 .PHONY : src/glad.o
@@ -217,6 +244,9 @@ help:
 	@echo "... Chapter/02/02_06.o"
 	@echo "... Chapter/02/02_06.i"
 	@echo "... Chapter/02/02_06.s"
+	@echo "... Chapter/03/03_01.o"
+	@echo "... Chapter/03/03_01.i"
+	@echo "... Chapter/03/03_01.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
