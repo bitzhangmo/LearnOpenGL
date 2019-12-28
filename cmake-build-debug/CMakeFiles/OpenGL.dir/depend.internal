@@ -5,8 +5,8 @@ CMakeFiles/OpenGL.dir/src/glad.c.o
  /Users/zhangmo/LearnOpenGLCN/src/glad.c
  /usr/local/include/KHR/khrplatform.h
  /usr/local/include/glad/glad.h
-CMakeFiles/OpenGL.dir/Chapter/03/03_01.cpp.o
- /Users/zhangmo/LearnOpenGLCN/Chapter/03/03_01.cpp
+CMakeFiles/OpenGL.dir/Chapter/04/04_01.cpp.o
+ /Users/zhangmo/LearnOpenGLCN/Chapter/04/04_01.cpp
  /Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/Camera.h
  /Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/Model.h
  /Users/zhangmo/LearnOpenGLCN/Header/LocalHeader/filesystem.h

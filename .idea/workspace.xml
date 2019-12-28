@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="OpenGL" targetName="OpenGL" />
-      <config projectName="OpenGL" targetName="LOCALHEADER" />
       <config projectName="OpenGL" targetName="ImGUI" />
+      <config projectName="OpenGL" targetName="LOCALHEADER" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,72 +14,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Header/assimp/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0302/model_loading_fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0302/model_loading_vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/04/04_01.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/Example/Example.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0401/depth_testing_fs.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/0401/depth_testing_vs.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/bricks2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/bricks2_disp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/bricks2_normal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/brickwall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/brickwall_normal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/hdr/newport_loft.hdr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/marble.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/matrix.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/metal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/gold/albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/gold/ao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/gold/metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/gold/normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/gold/roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/grass/albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/grass/ao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/grass/metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/grass/normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/grass/roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/plastic/albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/plastic/ao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/plastic/metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/plastic/normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/plastic/roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/rusted_iron/albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/rusted_iron/ao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/rusted_iron/metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/rusted_iron/normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/rusted_iron/roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/wall/albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/wall/ao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/wall/metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/wall/normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/pbr/wall/roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/skybox/back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/skybox/bottom.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/skybox/front.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/skybox/left.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/skybox/right.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/skybox/top.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/toy_box_diffuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/toy_box_disp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/toy_box_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/window.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Texture/wood.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter/03/03_01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/03/03_01.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/Model.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/Compiler/poppack1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/poppack1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/Compiler/pstdint.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/pstdint.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/Compiler/pushpack1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/pushpack1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/DefaultLogger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/DefaultLogger.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/Exporter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/Exporter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/IOStream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/IOStream.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/IOSystem.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/IOSystem.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/Importer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/Importer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/LogStream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/LogStream.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/Logger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/Logger.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/NullLogger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/NullLogger.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/ProgressHandler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/ProgressHandler.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/ai_assert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/ai_assert.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/anim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/anim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/camera.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cexport.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/cexport.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cfileio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/cfileio.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cimport.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/cimport.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/color4.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/color4.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/color4.inl" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/color4.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/defs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/defs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/importerdesc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/importerdesc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/light.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/light.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/material.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/material.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/material.inl" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/material.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/matrix3x3.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/matrix3x3.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/matrix3x3.inl" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/matrix3x3.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/matrix4x4.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/matrix4x4.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/matrix4x4.inl" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/matrix4x4.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/mesh.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/metadata.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/metadata.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/postprocess.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/postprocess.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/quaternion.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/quaternion.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/quaternion.inl" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/quaternion.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/scene.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/scene.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/texture.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/types.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/types.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/vector2.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/vector2.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/vector2.inl" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/vector2.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/vector3.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/vector3.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/vector3.inl" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/vector3.inl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/assimp/version.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/assimp/version.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Header/LocalHeader/mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/Header/LocalHeader/mesh.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header/assimp/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texture/awesomeface.png" beforeDir="false" afterPath="$PROJECT_DIR$/Texture/awesomeface.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texture/container.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Texture/container.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texture/container2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Texture/container2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Texture/container2_specular.png" beforeDir="false" afterPath="$PROJECT_DIR$/Texture/container2_specular.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" afterDir="false" />
@@ -87,10 +78,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGL.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,8 +111,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="GLSL Shader" />
         <option value="CMakeLists.txt" />
+        <option value="GLSL Shader" />
       </list>
     </option>
   </component>
@@ -143,25 +132,25 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Texture" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter/Example" />
       <recent name="$PROJECT_DIR$/Header/assimp" />
       <recent name="$PROJECT_DIR$/Header" />
       <recent name="$PROJECT_DIR$/Header/LocalHeader" />
       <recent name="$PROJECT_DIR$/Chapter/02" />
-      <recent name="$PROJECT_DIR$/Chapter/01" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Texture" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Header" />
       <recent name="$PROJECT_DIR$/Shader" />
       <recent name="$PROJECT_DIR$/Shader/0205" />
-      <recent name="$PROJECT_DIR$/Chapter" />
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.OpenGL">
@@ -181,9 +170,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.OpenGL" />
       <item itemvalue="CMake Application.ImGUI" />
       <item itemvalue="CMake Application.LOCALHEADER" />
+      <item itemvalue="CMake Application.OpenGL" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -248,7 +237,8 @@
       <workItem from="1576162902260" duration="198000" />
       <workItem from="1576163267013" duration="374000" />
       <workItem from="1577239429190" duration="2315000" />
-      <workItem from="1577242194164" duration="11028000" />
+      <workItem from="1577242194164" duration="17776000" />
+      <workItem from="1577496930008" duration="446000" />
     </task>
     <servers />
   </component>
@@ -280,35 +270,39 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="405" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1577342795240" />
-    <state width="1398" height="62" key="GridCell.Tab.0.bottom" timestamp="1577242190756">
+    <state width="1398" height="62" key="GridCell.Tab.0.bottom" timestamp="1577466088441">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="62" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577242190756" />
+    <state width="1398" height="62" key="GridCell.Tab.0.bottom/0.0.1440.900/-216.-1080.1920.1080@0.0.1440.900" timestamp="1577466088441" />
+    <state width="1398" height="62" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577416726299" />
     <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576165643432" />
-    <state width="1398" height="62" key="GridCell.Tab.0.center" timestamp="1577242190754">
+    <state width="1398" height="62" key="GridCell.Tab.0.center" timestamp="1577466088440">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="62" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577242190754" />
+    <state width="1398" height="62" key="GridCell.Tab.0.center/0.0.1440.900/-216.-1080.1920.1080@0.0.1440.900" timestamp="1577466088440" />
+    <state width="1398" height="62" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577416726298" />
     <state width="1398" height="57" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576165643431" />
-    <state width="1398" height="62" key="GridCell.Tab.0.left" timestamp="1577242190753">
+    <state width="1398" height="62" key="GridCell.Tab.0.left" timestamp="1577466088439">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="62" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577242190753" />
+    <state width="1398" height="62" key="GridCell.Tab.0.left/0.0.1440.900/-216.-1080.1920.1080@0.0.1440.900" timestamp="1577466088439" />
+    <state width="1398" height="62" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577416726297" />
     <state width="1398" height="57" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576165643431" />
-    <state width="1398" height="62" key="GridCell.Tab.0.right" timestamp="1577242190755">
+    <state width="1398" height="62" key="GridCell.Tab.0.right" timestamp="1577466088440">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="62" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577242190755" />
+    <state width="1398" height="62" key="GridCell.Tab.0.right/0.0.1440.900/-216.-1080.1920.1080@0.0.1440.900" timestamp="1577466088440" />
+    <state width="1398" height="62" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577416726299" />
     <state width="1398" height="57" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576165643432" />
     <state x="205" y="79" key="SettingsEditor" timestamp="1575791565133">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="205" y="79" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575791565133" />
     <state x="205" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1570526816582" />
-    <state x="390" y="278" key="com.intellij.ide.util.TipDialog" timestamp="1577239430316">
+    <state x="390" y="278" key="com.intellij.ide.util.TipDialog" timestamp="1577497613411">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="390" y="278" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1577239430316" />
+    <state x="390" y="278" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1577497613411" />
     <state x="390" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1575791468479" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577341286108">
       <screen x="0" y="0" width="1440" height="900" />
