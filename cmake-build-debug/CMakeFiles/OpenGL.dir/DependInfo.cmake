@@ -17,7 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/local/include/KHR"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zhangmo/LearnOpenGLCN/Chapter/04/04_02.cpp" "/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/04/04_02.cpp.o"
+  "/Users/zhangmo/LearnOpenGLCN/Chapter/04/04_03.cpp" "/Users/zhangmo/LearnOpenGLCN/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/04/04_03.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

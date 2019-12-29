@@ -14,13 +14,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66736616-6195-4012-91bd-0446acb48deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter/04/04_02.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0402/stencil_single_color.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0402/stencil_testing_fs.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shader/0402/stencil_testing_vs.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/04/04_03.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/04/blending_fs.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shader/04/blending_vs.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter/04/04_02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter/04/04_02.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0401/depth_testing_fs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/04/depth_testing_fs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0401/depth_testing_vs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/04/depth_testing_vs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0402/stencil_single_color.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/04/stencil_single_color.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0402/stencil_testing_fs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/04/stencil_testing_fs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shader/0402/stencil_testing_vs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Shader/04/stencil_testing_vs.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/Chapter/04/04_02.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL.dir/cmake_clean.cmake" afterDir="false" />
@@ -87,19 +93,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Chapter/Example" />
-      <recent name="$PROJECT_DIR$/Header/assimp" />
-      <recent name="$PROJECT_DIR$/Header" />
-      <recent name="$PROJECT_DIR$/Header/LocalHeader" />
-      <recent name="$PROJECT_DIR$/Chapter/02" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Texture" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Header" />
       <recent name="$PROJECT_DIR$/Shader" />
       <recent name="$PROJECT_DIR$/Shader/0205" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Shader/04" />
+      <recent name="$PROJECT_DIR$/Chapter/Example" />
+      <recent name="$PROJECT_DIR$/Header/assimp" />
+      <recent name="$PROJECT_DIR$/Header" />
+      <recent name="$PROJECT_DIR$/Header/LocalHeader" />
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.OpenGL">
@@ -187,7 +193,7 @@
       <workItem from="1576163267013" duration="374000" />
       <workItem from="1577239429190" duration="2315000" />
       <workItem from="1577242194164" duration="17776000" />
-      <workItem from="1577496930008" duration="4049000" />
+      <workItem from="1577496930008" duration="6510000" />
     </task>
     <servers />
   </component>
@@ -219,34 +225,34 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="405" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1577342795240" />
-    <state x="0" y="0" width="1440" height="900" key="DiffContextDialog" timestamp="1577502548553">
+    <state x="0" y="0" width="1440" height="900" key="DiffContextDialog" timestamp="1577600303330">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="79" width="1240" height="719" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1577502299803" />
-    <state x="0" y="0" width="1440" height="900" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1577502548553" />
-    <state width="1398" height="62" key="GridCell.Tab.0.bottom" timestamp="1577502904288">
+    <state x="0" y="0" width="1440" height="900" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1577600303330" />
+    <state width="1398" height="62" key="GridCell.Tab.0.bottom" timestamp="1577603763713">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="62" key="GridCell.Tab.0.bottom/0.0.1440.900/-216.-1080.1920.1080@0.0.1440.900" timestamp="1577466088441" />
-    <state width="1398" height="62" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577502904288" />
+    <state width="1398" height="62" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577603763713" />
     <state width="1398" height="57" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576165643432" />
-    <state width="1398" height="62" key="GridCell.Tab.0.center" timestamp="1577502904287">
+    <state width="1398" height="62" key="GridCell.Tab.0.center" timestamp="1577603763712">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="62" key="GridCell.Tab.0.center/0.0.1440.900/-216.-1080.1920.1080@0.0.1440.900" timestamp="1577466088440" />
-    <state width="1398" height="62" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577502904287" />
+    <state width="1398" height="62" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577603763712" />
     <state width="1398" height="57" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576165643431" />
-    <state width="1398" height="62" key="GridCell.Tab.0.left" timestamp="1577502904286">
+    <state width="1398" height="62" key="GridCell.Tab.0.left" timestamp="1577603763711">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="62" key="GridCell.Tab.0.left/0.0.1440.900/-216.-1080.1920.1080@0.0.1440.900" timestamp="1577466088439" />
-    <state width="1398" height="62" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577502904286" />
+    <state width="1398" height="62" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577603763711" />
     <state width="1398" height="57" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576165643431" />
-    <state width="1398" height="62" key="GridCell.Tab.0.right" timestamp="1577502904287">
+    <state width="1398" height="62" key="GridCell.Tab.0.right" timestamp="1577603763713">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="62" key="GridCell.Tab.0.right/0.0.1440.900/-216.-1080.1920.1080@0.0.1440.900" timestamp="1577466088440" />
-    <state width="1398" height="62" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577502904287" />
+    <state width="1398" height="62" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577603763713" />
     <state width="1398" height="57" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576165643432" />
     <state x="205" y="79" key="SettingsEditor" timestamp="1575791565133">
       <screen x="0" y="0" width="1440" height="900" />
@@ -258,9 +264,9 @@
     </state>
     <state x="390" y="278" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1577497613411" />
     <state x="390" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1575791468479" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577500311141">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577603310656">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577500311141" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577603310656" />
   </component>
 </project>

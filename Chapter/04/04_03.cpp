@@ -1,6 +1,7 @@
 //
-// Created by 王啸川 on 2019/12/28.
+// Created by 王啸川 on 2019/12/29.
 //
+
 #include <glad.h>
 #include <glfw3.h>
 #include <iostream>
@@ -19,8 +20,8 @@
 using namespace std;
 
 // settings
-const unsigned int SCR_WIDTH = 1280;
-const unsigned int SCR_HEIGHT = 720;
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
 
 Camera camera(glm::vec3(0.0f,0.0f,3.0f));
 float lastX = SCR_WIDTH/2.0f;
@@ -73,13 +74,10 @@ int main(void)
     }
 
     glEnable(GL_DEPTH_TEST);
-    glDepthFunc(GL_LESS);
-    glEnable(GL_STENCIL_TEST);
-    glStencilFunc(GL_NOTEQUAL,1,0xFF);
-    glStencilOp(GL_KEEP,GL_KEEP,GL_REPLACE);
+    //glDepthFunc(GL_LESS);
+    //glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,,height,)
 
-    Shader shader("../Shader/0402/stencil_testing_vs.glsl","../Shader/0402/stencil_testing_fs.glsl");
-    Shader shaderSingleColor("../Shader/0402/stencil_testing_vs.glsl","../Shader/0402/stencil_single_color.glsl");
+    Shader shader("../Shader/04/blending_vs.glsl","../Shader/04/blending_fs.glsl");
 
     float cubeVertices[] = {
             // positions          // texture Coords
@@ -137,6 +135,17 @@ int main(void)
             5.0f, -0.5f, -5.0f,  2.0f, 2.0f
     };
 
+    float transparentVertices[] = {
+            // positions         // texture Coords (swapped y coordinates because texture is flipped upside down)
+            0.0f,  0.5f,  0.0f,  0.0f,  0.0f,
+            0.0f, -0.5f,  0.0f,  0.0f,  1.0f,
+            1.0f, -0.5f,  0.0f,  1.0f,  1.0f,
+
+            0.0f,  0.5f,  0.0f,  0.0f,  0.0f,
+            1.0f, -0.5f,  0.0f,  1.0f,  1.0f,
+            1.0f,  0.5f,  0.0f,  1.0f,  0.0f
+    };
+
     unsigned int cubeVAO,cubeVBO;
     glGenVertexArrays(1,&cubeVAO);
     glGenBuffers(1,&cubeVBO);
@@ -161,8 +170,31 @@ int main(void)
     glVertexAttribPointer(1,2,GL_FLOAT,GL_FALSE,5 * sizeof(float),(void*)(3 * sizeof(float)));
     glBindVertexArray(0);
 
+    unsigned int transparentVAO,transparentVBO;
+    glGenVertexArrays(1,&transparentVAO);
+    glGenBuffers(1,&transparentVBO);
+    glBindVertexArray(transparentVAO);
+    glBindBuffer(GL_ARRAY_BUFFER,transparentVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(transparentVertices),&transparentVertices,GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,5* sizeof(float),(void*)0);
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1,2,GL_FLOAT,GL_FALSE,5* sizeof(float),(void*)(3* sizeof(float)));
+    glBindVertexArray(0);
+
+
     unsigned int cubeTexture = loadTexture(FileSystem::getPath("Texture/marble.jpg").c_str());
     unsigned int floorTexture = loadTexture(FileSystem::getPath("Texture/metal.png").c_str());
+    unsigned int transparentTexture = loadTexture(FileSystem::getPath("Texture/grass.png").c_str());
+
+    vector<glm::vec3> vegetation
+    {
+        glm::vec3(-1.5f,0.0f,-0.48f),
+        glm::vec3(1.5f,0.0f,0.51f),
+        glm::vec3(0.0f,0.0f,0.7f),
+        glm::vec3(-0.3f,0.0f,-2.3f),
+        glm::vec3(0.5f,0.0f,-0.6f),
+    };
 
     shader.use();
     shader.setInt("texture1",0);
@@ -178,29 +210,14 @@ int main(void)
 
         // 渲染指令
         glClearColor(0.1f,0.1f,0.1f,1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        shaderSingleColor.use();
+        shader.use();
         glm::mat4 model = glm::mat4(1.0f);
         glm::mat4 view = camera.GetViewMatrix();
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom),(float)SCR_WIDTH/(float)SCR_HEIGHT,0.1f,100.0f);
-        shaderSingleColor.setMat4("view",view);
-        shaderSingleColor.setMat4("projection",projection);
-
-        shader.use();
         shader.setMat4("view",view);
         shader.setMat4("projection",projection);
-
-        glStencilMask(0x00);
-
-        glBindVertexArray(planeVAO);
-        glBindTexture(GL_TEXTURE_2D,floorTexture);
-        shader.setMat4("model",glm::mat4(1.0f));
-        glDrawArrays(GL_TRIANGLES,0,6);
-        glBindVertexArray(0);
-
-        glStencilFunc(GL_ALWAYS,1,0xFF);
-        glStencilMask(0xFF);
 
         glBindVertexArray(cubeVAO);
         glActiveTexture(GL_TEXTURE0);
@@ -213,27 +230,25 @@ int main(void)
         shader.setMat4("model",model);
         glDrawArrays(GL_TRIANGLES,0,36);
 
-        glStencilFunc(GL_NOTEQUAL,1,0xFF);
-        glStencilMask(0x00);
-        glDisable(GL_DEPTH_TEST);
-        shaderSingleColor.use();
-        float scale = 1.1;
+        glBindVertexArray(planeVAO);
+        glBindTexture(GL_TEXTURE_2D,floorTexture);
+        model = glm::mat4(1.0f);
+        shader.setMat4("model",model);
+        glDrawArrays(GL_TRIANGLES,0,6);
 
-        glBindVertexArray(cubeVAO);
-        glBindTexture(GL_TEXTURE_2D,cubeTexture);
-        model = glm::mat4(1.0f);
-        model = glm::translate(model,glm::vec3(-1.0f,0.0f,-1.0f));
-        model = glm::scale(model,glm::vec3(scale,scale,scale));
-        shaderSingleColor.setMat4("model",model);
-        glDrawArrays(GL_TRIANGLES,0,36);
-        model = glm::mat4(1.0f);
-        model = glm::translate(model,glm::vec3(2.0f,0.0f,0.0f));
-        model = glm::scale(model,glm::vec3(scale,scale,scale));
-        shaderSingleColor.setMat4("model",model);
-        glDrawArrays(GL_TRIANGLES,0,36);
-        glBindVertexArray(0);
-        glStencilMask(0xFF);
-        glEnable(GL_DEPTH_TEST);
+        glBindVertexArray(transparentVAO);
+        glBindTexture(GL_TEXTURE_2D,transparentTexture);
+
+        for(GLuint i = 0;i < vegetation.size();i++)
+        {
+            model = glm::mat4(1.0f);
+            model = glm::translate(model,vegetation[i]);
+            shader.setMat4("model",model);
+            glDrawArrays(GL_TRIANGLES,0,6);
+        }
+//        glBindVertexArray(0);
+
+
 
         // 检查并调用事件，交换缓冲
         glfwSwapBuffers(window);
@@ -314,11 +329,10 @@ unsigned int loadTexture(char const *path)
         glTexImage2D(GL_TEXTURE_2D,0,format,width,height,0,format,GL_UNSIGNED_BYTE,data);
         glGenerateMipmap(GL_TEXTURE_2D);
 
-        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_S,GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_T,GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR_MIPMAP_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
-
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, format == GL_RGBA ? GL_CLAMP_TO_EDGE : GL_REPEAT); // for this tutorial: use GL_CLAMP_TO_EDGE to prevent semi-transparent borders. Due to interpolation it takes texels from next repeat
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, format == GL_RGBA ? GL_CLAMP_TO_EDGE : GL_REPEAT);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         stbi_image_free(data);
     }
     else

@@ -149,32 +149,32 @@ LOCALHEADER/fast:
 	$(MAKE) -f Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build.make Header/LocalHeader/CMakeFiles/LOCALHEADER.dir/build
 .PHONY : LOCALHEADER/fast
 
-Chapter/04/04_02.o: Chapter/04/04_02.cpp.o
+Chapter/04/04_03.o: Chapter/04/04_03.cpp.o
 
-.PHONY : Chapter/04/04_02.o
+.PHONY : Chapter/04/04_03.o
 
 # target to build an object file
-Chapter/04/04_02.cpp.o:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/04/04_02.cpp.o
-.PHONY : Chapter/04/04_02.cpp.o
+Chapter/04/04_03.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/04/04_03.cpp.o
+.PHONY : Chapter/04/04_03.cpp.o
 
-Chapter/04/04_02.i: Chapter/04/04_02.cpp.i
+Chapter/04/04_03.i: Chapter/04/04_03.cpp.i
 
-.PHONY : Chapter/04/04_02.i
+.PHONY : Chapter/04/04_03.i
 
 # target to preprocess a source file
-Chapter/04/04_02.cpp.i:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/04/04_02.cpp.i
-.PHONY : Chapter/04/04_02.cpp.i
+Chapter/04/04_03.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/04/04_03.cpp.i
+.PHONY : Chapter/04/04_03.cpp.i
 
-Chapter/04/04_02.s: Chapter/04/04_02.cpp.s
+Chapter/04/04_03.s: Chapter/04/04_03.cpp.s
 
-.PHONY : Chapter/04/04_02.s
+.PHONY : Chapter/04/04_03.s
 
 # target to generate assembly for a file
-Chapter/04/04_02.cpp.s:
-	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/04/04_02.cpp.s
-.PHONY : Chapter/04/04_02.cpp.s
+Chapter/04/04_03.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL.dir/build.make CMakeFiles/OpenGL.dir/Chapter/04/04_03.cpp.s
+.PHONY : Chapter/04/04_03.cpp.s
 
 src/glad.o: src/glad.c.o
 
@@ -214,9 +214,9 @@ help:
 	@echo "... OpenGL"
 	@echo "... ImGUI"
 	@echo "... LOCALHEADER"
-	@echo "... Chapter/04/04_02.o"
-	@echo "... Chapter/04/04_02.i"
-	@echo "... Chapter/04/04_02.s"
+	@echo "... Chapter/04/04_03.o"
+	@echo "... Chapter/04/04_03.i"
+	@echo "... Chapter/04/04_03.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
